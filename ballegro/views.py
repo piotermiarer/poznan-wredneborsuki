@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from .models import Team
 
+from urllib.parse import unquote
 
 def root(request):
     teams = Team.objects.all()
