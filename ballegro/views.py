@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import Team
 
 
 def root(request):
-    return render(request, 'ballegro/root.html')
+    teams = Team.objects.all()
+    return render(request, 'ballegro/root.html', {'teams': teams})
