@@ -29,3 +29,15 @@ class RootViewTest(TestCase, BasicViewTest):
     def test_teams_in_context(self):
         response = self.client.get(self.url)
         self.assertIn('teams', response.context)
+
+
+class TeamShowViewTest(TestCase, BasicViewTest):
+
+    def setUp(self):
+        self.url = '/'
+        self.expected_view_name = 'ballegro:team_show'
+        self.expected_template = 'ballegro/team_show.html'
+
+    def test_teams_in_context(self):
+        response = self.client.get(self.url)
+        self.assertIn('team', response.context)
