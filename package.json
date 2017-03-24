@@ -1,0 +1,25 @@
+{
+  "name": "poznan-wredneborsuki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/assets/Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp --gulpfile ./frontend/Gulpfile.js build:watch",
+    "build": "gulp --gulpfile ./frontend/Gulpfile.js build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braincode17/poznan-wredneborsuki.git"
+  },
+  "author": "WredneBorsuki",
+  "bugs": {
+    "url": "https://github.com/braincode17/poznan-wredneborsuki/issues"
+  },
+  "homepage": "https://github.com/braincode17/poznan-wredneborsuki#readme",
+  "devDependencies": {
+    "gulp": "=3.9.1",
+    "gulp-concat": "=2.6.1",
+    "gulp-sass": "=3.1.0"
+  }
+}
