@@ -23,3 +23,6 @@ for league in league_list:
     for team in teams_in_league["teams"]:
         team = {"name": team["name"], "crest_url": team["crestUrl"]}
         leagues_with_teams[-1]["teams"].append(team)
+
+with open('leagues.json', 'w') as outfile:
+    json.dump(leagues_with_teams, outfile)
