@@ -1,1 +1,6 @@
-console.log('Initialization main main');
+
+const teamShow = require('./team-show');
+
+document.addEventListener('DOMContentLoaded', () => {
+    teamShow();
+});
