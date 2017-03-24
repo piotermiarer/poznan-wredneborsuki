@@ -1,1 +1,1 @@
-console.log('Initialization');
+console.log('Initialization main main');
