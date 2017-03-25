@@ -1,6 +1,9 @@
 {% extends 'ballegro/base.html' %}
+{% load staticfiles %}
 {% block content %}
-    <div class="center main" id="offers">
+<div class="container main" id="offers">
+    <div class="center">
+        {% if results %}
         <ul class="offers-list">
             {% for r in results %}
             <li class="offers-list__element">
@@ -14,5 +17,12 @@
             </li>
             {% endfor %}
         </ul>
+        {% else %}
+        <div class="no-offers">
+            <h3 class="no-offers__info">Nothing to see here</h3>
+            <img class="no-offers__image" src="{% static 'images/benched.svg' %}" />
+        </div>
+        {% endif %}
     </div>
+</div>
 {% endblock content %}

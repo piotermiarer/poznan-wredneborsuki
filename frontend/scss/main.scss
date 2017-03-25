@@ -6,12 +6,17 @@ $gray-darker: #222222;
 /* universal */
 
 body {
+    padding: 0.01em;
     padding-top: 60px;
     background: linear-gradient(to top right, #ffffff 0%, #ffffff 50%, #fafafa 50%, #fafafa 100%);
     background-position: center;
     background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
 }
-
+.container {
+    max-width: 100%;
+}
 .center {
   text-align: center;
 
@@ -27,8 +32,7 @@ body {
 
 .figures {
     width: 70vw;
-    margin: -13vw auto 0;
-    min-height: calc(100vh - 160px);
+    margin: 0 auto 0;
     display: flex;
     align-items: flex-end;
     flex-wrap: nowrap;
@@ -83,10 +87,14 @@ body {
       animation-fill-mode: both;
   }
 }
-
+.container#root {
+    margin-bottom: 30px;
+}
 /* footer */
 
 footer {
+  position: absolute;
+  bottom: 0;
   margin-top: 45px;
   padding-top: 5px;
   padding-left: 4em;
@@ -120,7 +128,7 @@ footer {
 }
 
 .banner {
-    width: 65%;
+    width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -170,7 +178,6 @@ svg {
 }
 #player {
     height: 60vh;
-    margin-right: 10vw;
 }
 #fan {
     height: 70vh;
@@ -231,7 +238,17 @@ svg {
         left: 0px;
     }
 }
+.no-offers {
+    margin-top: 80px;
+    &__info {
+        text-align: left;
+        font-size: 4em;
+        font-weight: 900;
+    }
+    &__image {
 
+    }
+}
 @keyframes roll-and-wait {
   0% {
     transform: rotate(0); }

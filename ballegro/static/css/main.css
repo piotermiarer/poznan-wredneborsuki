@@ -1,10 +1,16 @@
 /* mixins, variables, etc. */
 /* universal */
 body {
+  padding: 0.01em;
   padding-top: 60px;
   background: linear-gradient(to top right, #ffffff 0%, #ffffff 50%, #fafafa 50%, #fafafa 100%);
   background-position: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh; }
+
+.container {
+  max-width: 100%; }
 
 .center {
   text-align: center; }
@@ -19,8 +25,7 @@ body {
 
 .figures {
   width: 70vw;
-  margin: -13vw auto 0;
-  min-height: calc(100vh - 160px);
+  margin: 0 auto 0;
   display: flex;
   align-items: flex-end;
   flex-wrap: nowrap;
@@ -67,8 +72,13 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: both; }
 
+.container#root {
+  margin-bottom: 30px; }
+
 /* footer */
 footer {
+  position: absolute;
+  bottom: 0;
   margin-top: 45px;
   padding-top: 5px;
   padding-left: 4em;
@@ -96,7 +106,7 @@ footer {
   height: 200px; }
 
 .banner {
-  width: 65%;
+  width: 100%;
   margin-top: 20px;
   display: flex;
   justify-content: space-between; }
@@ -134,8 +144,7 @@ svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1
   cursor: pointer; }
 
 #player {
-  height: 60vh;
-  margin-right: 10vw; }
+  height: 60vh; }
 
 #fan {
   height: 70vh; }
@@ -179,6 +188,13 @@ svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1
     right: 20px; }
   .offer:hover .offer__details {
     left: 0px; }
+
+.no-offers {
+  margin-top: 80px; }
+  .no-offers__info {
+    text-align: left;
+    font-size: 4em;
+    font-weight: 900; }
 
 @keyframes roll-and-wait {
   0% {
