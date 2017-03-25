@@ -35,15 +35,23 @@ def main():
             new_league.save()
             for team in league['teams']:
                 url = team['crest_url']
-                response = requests.get(url)
-                filename = url.split('/')[-1]
-                image_filename = 'static/images/' + unquote(filename)
-                with open('ballegro/' + image_filename, 'wb') as f:
-                    f.write(response.content)
-                if not image_filename.endswith('.svg'):
-                    resize_photo('ballegro/' + image_filename)
-                new_team = Team(name=team['name'], image=image_filename, league=new_league)
-                new_team.save()
+                if url is not None:
+                    response = requests.get(url)
+                    if response.status_code != 404:
+                        filename = url.split('/')[-1]
+                        image_filename = 'static/images/' + unquote(filename)
+                        with open('ballegro/' + image_filename, 'wb') as f:
+                            f.write(response.content)
+                        if not image_filename.endswith('.svg'):
+                            resize_photo('ballegro/' + image_filename)
+                    else:
+                        image_filename = 'errors'
+                    new_team = Team(name=team['name'], image=image_filename, league=new_league)
+                    new_team.save()
+                else:
+                    image_filename = 'errors'
+                    new_team = Team(name=team['name'], image=image_filename, league=new_league)
+                    new_team.save()
 
 
 def resize_photo(path):
