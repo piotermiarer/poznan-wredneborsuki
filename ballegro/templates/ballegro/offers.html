@@ -12,7 +12,7 @@
                         <h4 class="offer__title">{{r.name}}</h4>
                         <span class="offer__price">{{ r.prices.buyNow.amount}}{{ r.prices.buyNow.currency}}</span>
                     </div>
-                    <img class="offer_image" src="{{ r.images.0.url }}"/>
+                    <img class="offer_image" src="{{ r.images.0.url }}" alt="{{r.name}}"/>
                 </a>
             </li>
             {% endfor %}
