@@ -22,13 +22,20 @@ def offers(request, team_name, clothes, page):
     team = get_object_or_404(Team, name=team_name)
     clothes_object = get_object_or_404(Clothes, url_name=clothes)
     clothes_phrase = clothes_object.name
-    if clothes == 'piłka':
-        league_name = team.league.name
-        clothes_phrase += ' ' + league_name
     team_phrase = ''
+    
     if (clothes_object.add_team_to_phrase):
         team_phrase = team_name
-    results = get_offers(clothes_phrase, team_phrase, clothes_object.category)[first_index:first_index + OFFERS_PER_PAGE]
+    results = get_offers(clothes_phrase, team_phrase,
+        clothes_object.category)[first_index:first_index + OFFERS_PER_PAGE]
+
+    if clothes == 'ball':
+        league_name = team.league.name
+        clothes_phrase += ' ' + league_name
+        team_phrase = ''
+        results += get_offers(clothes_phrase, team_phrase,
+            clothes_object.category)[first_index:first_index + OFFERS_PER_PAGE]
+
     return render(request, 'ballegro/offers.html',
         {'team': team, 'results': results, 'page': page})
 

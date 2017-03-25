@@ -1,7 +1,7 @@
 {% extends 'ballegro/base.html' %}
 {% block content %}
-
-  <div class="jumbotron center main" id="all-teams">
+<div class="container main" id="all-teams">
+  <div class="jumbotron center">
     <h2> Ligi </h2>
       {% for league, teams in leagues_with_teams.items %}
         <div class="col-xs-6 col-md-3" id="team-tile">{{ league }}
