@@ -51,7 +51,12 @@ body {
     z-index: -1;
     background: url("/static/images/logo.svg");
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    animation-timing-function: linear;
+    animation-name: roll-and-wait;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
 
 /* footer */
 footer {
@@ -104,5 +109,15 @@ svg #shorts-p1, svg #shorts-p2, svg #shorts-inside-p1, svg #shorts-inside-p2, sv
 svg #shirt-top, svg #shirt-back, svg #boot1-top, svg #boot2-top, svg #boot1-down, svg #boot2-down,
 svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1-top-fan, svg #boot2-top-fan, svg #boot1-down-fan, svg #boot2-down-fan {
   cursor: pointer; }
+
+@keyframes roll-and-wait {
+  0% {
+    transform: rotate(0); }
+  10% {
+    transform: rotate(0); }
+  90% {
+    transform: rotate(540deg); }
+  100% {
+    transform: rotate(540deg); } }
 
 /*# sourceMappingURL=main.css.map */

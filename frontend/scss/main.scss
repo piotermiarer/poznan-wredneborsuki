@@ -50,6 +50,7 @@ body {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+
   &:hover {
     color:white;
     text-decoration: none;
@@ -65,7 +66,11 @@ body {
       background: url('/static/images/logo.svg');
       background-repeat: no-repeat;
       background-size: contain;
-
+      animation-timing-function: linear;
+      animation-name: roll-and-wait;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
   }
 }
 
