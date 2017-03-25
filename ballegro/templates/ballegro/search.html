@@ -1,4 +1,7 @@
 {% extends 'ballegro/base.html' %}
 {% block content %}
-    <h3>{{ team.name }}</h3>
+    {% for r in results %}
+    <a href="{{ r.url }}"><img src="{{ r.images.0.url }}"/></a>
+    <div>name: {{ r.name }}, price: {{ r.prices.buyNow.amount}}{{ r.prices.buyNow.currency}}</div>
+    {% endfor %}
 {% endblock content %}
