@@ -1,8 +1,8 @@
-import requests
+import requests, re
 
 
-def get_offers(clothes, team_name, category=None):
-    search_phrase = clothes + ' ' + team_name
+def get_offers(clothes, team_phrase, category=None):
+    search_phrase = clothes + ' ' + team_phrase
     parameters = {'phrase': search_phrase, 'country.code': 'PL'}
     if category is not None:
         parameters['category.name'] = category
@@ -15,4 +15,14 @@ def get_offers(clothes, team_name, category=None):
             'Accept': 'application/vnd.allegro.public.v1+json'
         }
     )
-    return response.json()['offers']
+    offers = response.json()['offers']
+
+    final_offers = []
+    for offer in offers:
+        name = offer['name']
+        if re.search(clothes.split(' ')[0] + '\\b', offer['name'], re.IGNORECASE):
+            if team_phrase != '' and not re.search(team_phrase, offer['name'], re.IGNORECASE):
+                continue
+            else:
+                final_offers.append(offer)
+    return final_offers
