@@ -44,7 +44,7 @@ body {
   float: right;
   display: flex;
   align-items: center;
-  margin-right: 20vw;
+  margin-right: 15vw;
   font-size: 1.2em;
   height: 70px;
   line-height: 70px; }
@@ -221,10 +221,20 @@ svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1
   line-height: 28px;
   padding-left: 5px;
   border-radius: 2px;
+  display: inline-block;
+  width: 250px;
   border: none; }
 
 .searchbar__input:focus {
   outline: none; }
+
+.searchbar__sugestions-list {
+  height: 34px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 250px; }
 
 @keyframes roll-and-wait {
   0% {

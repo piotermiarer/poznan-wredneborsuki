@@ -25,9 +25,43 @@ module.exports = function searchbar(element) {
 }
 
 function getResultsForPhrase(url, phrase) {
-    return fetch(`${url}/${phrase}`);
+    return fetch(`${url}/${phrase}`).then(res => res.json());
 }
 
 function displaySuggestions(results, container) {
-    
+    const children = utils.toArray(container.children);
+    if (results > children) {
+        children.forEach((child, i) => updateSuggestion(child, results[i][i]));
+        results.slice(children.length).forEach((result, i) => createSuggestion(container, result[i]));
+    } else {
+        results.forEach((result, i) => updateSuggestion(children[i], result[i]));
+        children.slice(results.length).forEach((child) => removeSuggestion(child));
+    }
+}
+
+function updateSuggestion(sugestion, name) {
+    const link = sugestion.querySelector('a');
+    const image = sugestion.querySelector('img');
+    const p = sugestion.querySelector('p');
+    p.innerText = name;
+    link.setAttribute('href', `/team_show/${name}`)
+}
+function createSuggestion(container, name) {
+    const el = document.createElement('li');
+    const link = document.createElement('a');
+    const image = document.createElement('img');
+    const p = document.createElement('p');
+    el.classList.add('sugestion');
+    link.classList.add('sugestion__link');
+    link.setAttribute('href', `/team_show/${name}`)
+    // image.classList.add('sugestion__image');
+    // image.setAttribute('src', `/static/images/${name}`)
+    p.classList.add('sugestion__name');
+    p.innerText = name;
+    link.appendChild(p);
+    el.appendChild(link);
+    container.appendChild(el);
+}
+function removeSuggestion(el) {
+    el.parentNode.removeChild(el);
 }
