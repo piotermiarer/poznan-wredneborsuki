@@ -36,6 +36,9 @@ gulp.task('javascript', () => {
         debug: true
     })
         .bundle()
+        .on('error', function (err) {
+            console.log(err.toString());
+        })
         .pipe(source('bundle.js'))
         .pipe(buffer())
         .pipe(sourcemaps.init({

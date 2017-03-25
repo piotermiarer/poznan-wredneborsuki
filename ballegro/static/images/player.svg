@@ -12,7 +12,7 @@
    width="101.17966mm"
    height="170.18005mm"
    viewBox="0 0 358.5106 603.00019"
-   id="svg2"
+   id="player"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="player.svg">
@@ -128,7 +128,7 @@
     <path
        style="fill:#2c89a0;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 221.07143,318.79078 c 5.89286,14.64285 25.81147,34.75946 35.17857,32.85714 4.15333,-8.1897 -1.06722,-9.30561 -14.34694,-22.26928 -13.27971,-12.96367 -8.15306,-17.37358 -20.83163,-10.58786 z"
-       id="path4371"
+       id="shirt-back"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cczc" />
     <path
@@ -265,7 +265,7 @@
     <path
        style="opacity:1;fill:#e5ff80;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 474.84563,620.24132 c 3.7226,-2.02603 8.45906,-2.43328 11.27966,-3.44517 9.91581,-3.55715 19.44747,2.19156 21.64406,10.36809 2.19658,8.17653 -0.9519,14.74009 0.33297,21.9408 1.88105,10.54183 6.20886,17.27718 10.65217,30.30756 4.44331,13.03037 -4.00871,22.66819 -12.84072,26.19416 -8.83201,3.52597 -15.55726,-33.79191 -34.68105,-54.81622 l -1.22254,-10.43437 c -0.74916,-6.39412 -1.38449,-18.38097 4.83545,-20.11485 z"
-       id="rect4619"
+       id="boot2-down"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cszazzcsc"
        inkscape:label="#boot2-down" />
@@ -421,7 +421,7 @@
       <path
          sodipodi:nodetypes="cczssscc"
          inkscape:connector-curvature="0"
-         id="boot2-down"
+         id="boot1-down"
          d="m 329.46821,735.06088 c 0,0 16.94683,-6.56669 14.41714,-31.97082 19.22448,-1.88218 21.97562,14.44877 28.46239,12.62512 l 6.48677,-1.82365 c 3.37513,-0.94614 4.37029,18.09576 3.07962,20.72051 -1.95807,3.98202 -24.58367,20.70446 -28.18723,20.70446 l -22.11583,0 c -18.21341,-12.53334 -5.17745,-17.07314 -2.14286,-20.25562 z"
          style="opacity:1;fill:#e5ff80;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path

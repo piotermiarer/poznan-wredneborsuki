@@ -1,4 +1,30 @@
 body {
-  background-color: orange; }
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0.01em; }
+
+.navbar {
+  height: 70px;
+  border-bottom: 1px solid #c1c1c1;
+  box-shadow: 0 3px 2px #ffb600; }
+
+.logo {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; }
+
+.figures {
+  width: 70vw;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+  .figures svg {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */

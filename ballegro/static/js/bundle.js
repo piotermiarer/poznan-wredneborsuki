@@ -1,4 +1,79 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+const utils = require('./utils');
+
+const segmentNamesForType = {
+    player: {
+        'shorts': [ 'shorts-p1', 'shorts-p2', 'shorts-inside-p1', 'shorts-inside-p2' ],
+        'socks': [ 'socks' ],
+        'shirt': [ 'shirt-top', 'shirt-back' ],
+        'boots': [ 'boot1-top', 'boot2-top', 'boot1-down', 'boot2-down']
+    },
+    fan: {
+    }
+};
+
+module.exports = function createIntractiveFigure(svg, type, handlers) {
+    const self = {};
+    const segmentsNames = segmentNamesForType[type];
+    if (!segmentsNames) throw 'Unexpected figure type';
+
+    const segmentsElements = utils.objectMap(segmentsNames, (key, segments) => {
+        return segments.map(seg => svg.querySelector(`#${seg}`));
+    });
+    console.log(segmentsElements);
+    utils.objectForEach(segmentsElements, (key, segments) => {
+        segments.forEach(seg => {
+            seg.gearGroup = key;
+            seg.initialFill = seg.style.fill;
+            registerHandlers(seg, handlers[key], segmentsElements);
+            darkenElement(seg, 0.5);
+        });
+    });
+
+    self.elements = segmentsElements;
+    return self;
+}
+
+function registerHandlers(segment, clickHandler, allSegments) {
+    segment.addEventListener('mouseenter', event => {
+        allSegments[event.target.gearGroup].forEach(el => resetElement(el));
+    });
+    segment.addEventListener('mouseleave', event => {
+        allSegments[event.target.gearGroup].forEach(el => darkenElement(el, 0.5));
+    });
+    segment.addEventListener('click', event => {
+        clickHandler.call(null, null);
+    });
+
+}
+
+function darkenElement(el, pcnt) {
+    if (el.tagName === 'g') {
+        utils.toArray(el.children).forEach(child => darken(child, pcnt));
+    } else {
+        darken(el, pcnt);
+    }
+}
+
+function resetElement(el) {
+    if (el.tagName === 'g') {
+        utils.toArray(el.children).forEach(child => reset(child));
+    } else {
+        reset(el);
+    }
+}
+
+function reset(el) {
+    el.style.fill = el.initialFill;
+}
+
+function darken(el, pcnt) {
+    const val = el.style.fill.slice(4, -1).split(',').map(s => parseFloat(s)).map(n => utils.reduceNumber(n, pcnt));
+    el.initialFill = el.style.fill;
+    el.style.fill = `rgb(${val[0]}, ${val[1]}, ${val[2]})`;
+}
+
+},{"./utils":4}],2:[function(require,module,exports){
 
 const teamShow = require('./team-show');
 
@@ -6,15 +81,25 @@ document.addEventListener('DOMContentLoaded', () => {
     teamShow();
 });
 
-},{"./team-show":2}],2:[function(require,module,exports){
+},{"./team-show":3}],3:[function(require,module,exports){
 const SVGInjector = require('svg-injector');
+const createFigure = require('./interative-figure');
+const utils = require('./utils');
 
 module.exports = function teamShow() {
-    injectSVGs({});
+    injectSVGs({}).then(() => {
+        createFigure(document.querySelector('#player'), 'player', {
+            shorts() { console.log('shorts'); },
+            socks() { console.log('socks'); },
+            shirt() { console.log('shirt'); },
+            boots() { console.log('boots'); }
+        });
+
+    });
 }
 
 function injectSVGs(opts) {
-    const toInject = Array.prototype.slice.call(document.querySelectorAll('img.svg-injection'), 0);
+    const toInject = utils.toArray(document.querySelectorAll('img.svg-injection'));
     return new Promise((resolve, reject) => {
         SVGInjector(toInject, opts, count => {
             if (count != toInject.length) reject('Some elements hasn\'t been inserted');
@@ -23,7 +108,37 @@ function injectSVGs(opts) {
     });
 }
 
-},{"svg-injector":3}],3:[function(require,module,exports){
+const playerElements = {};
+
+},{"./interative-figure":1,"./utils":4,"svg-injector":5}],4:[function(require,module,exports){
+module.exports = {
+    toArray(list) {
+        return Array.prototype.slice.call(list, 0);
+    },
+    reduceNumber(number, pcnt) {
+        const result = number * (1 - pcnt);
+        return result > 255 ? 255 : parseInt(result);
+    },
+    objectForEach(obj, fn) {
+        for (let key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                fn.call(obj, key, obj[key], obj);
+            }
+        }
+    },
+    objectMap(obj, fn) {
+        const result  = {};
+        for (let key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                result[key] = fn.call(obj, key, obj[key], obj);
+            }
+        }
+        return result;
+    }
+
+}
+
+},{}],5:[function(require,module,exports){
 /**
  * SVGInjector v1.1.3 - Fast, caching, dynamic inline SVG DOM injection library
  * https://github.com/iconic/SVGInjector
@@ -489,6 +604,6 @@ function injectSVGs(opts) {
 
 }(window, document));
 
-},{}]},{},[1])
+},{}]},{},[2])
 
 //# sourceMappingURL=bundle.js.map
