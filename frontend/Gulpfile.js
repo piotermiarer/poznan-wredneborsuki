@@ -13,7 +13,7 @@ const srcs = {
     'javascript': [
         `${__dirname}/js/main.js`,
     ],
-    'images': `${__dirname}/images/**/*.svg`
+    'images': `${__dirname}/images/**/*.*`
 };
 
 const dests = {
@@ -28,10 +28,6 @@ gulp.task('sass', () => {
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(dests['styles']));
-});
-
-gulp.task('sass:watch', () => {
-    gulp.watch(srcs['styles'], ['sass']);
 });
 
 gulp.task('javascript', () => {
@@ -49,22 +45,17 @@ gulp.task('javascript', () => {
         .pipe(gulp.dest(dests['javascript']));
 });
 
-gulp.task('javascript:watch', () => {
-    gulp.watch(srcs['javascript'], ['javascript']);
-});
-
 gulp.task('images', () => {
     return gulp.src(srcs['images']).pipe(gulp.dest(dests['images']));
 });
 
-gulp.task('images:watch', () => {
-    gulp.watch(srcs['images'], ['images']);
-});
 
 gulp.task('build', ['sass', 'images', 'javascript'], () => {
     return true;
 });
 
-gulp.task('build:watch', ['sass:watch', 'images:watch', 'javascript'], () => {
-    return true;
+gulp.task('build:watch', ['sass', 'images', 'javascript'], () => {
+    gulp.watch(`${__dirname}/js/**/*.js`, ['javascript']);
+    gulp.watch(srcs['images'], ['images']);
+    gulp.watch(srcs['styles'], ['sass']);
 });
