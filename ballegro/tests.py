@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.core.urlresolvers import resolve
-from ballegro.models import Team
+from ballegro.models import Team, League
 
 
 class BasicViewTest:
@@ -34,10 +34,45 @@ class RootViewTest(TestCase, BasicViewTest):
 class TeamShowViewTest(TestCase, BasicViewTest):
 
     def setUp(self):
-        self.url = '/'
+        create_league_and_team()
+        self.url = '/team_show/Lech Poznań'
         self.expected_view_name = 'ballegro:team_show'
         self.expected_template = 'ballegro/team_show.html'
 
-    def test_teams_in_context(self):
+    def test_team_in_context(self):
         response = self.client.get(self.url)
         self.assertIn('team', response.context)
+
+
+class OffersViewTest(TestCase, BasicViewTest):
+
+    def setUp(self):
+        create_league_and_team()
+        self.url = '/offers/Lech Poznań/czapka'
+        self.expected_view_name = 'ballegro:offers'
+        self.expected_template = 'ballegro/offers.html'
+
+    def test_team_and_results_in_context(self):
+        response = self.client.get(self.url)
+        self.assertIn('team', response.context)
+        self.assertIn('results', response.context)
+
+
+class AllTeamsViewTest(TestCase, BasicViewTest):
+
+    def setUp(self):
+        create_league_and_team()
+        self.url = '/all_teams'
+        self.expected_view_name = 'ballegro:all_teams'
+        self.expected_template = 'ballegro/all_teams.html'
+
+    def test_leagues_with_teams_in_context(self):
+        response = self.client.get(self.url)
+        self.assertIn('leagues_with_teams', response.context)
+
+
+def create_league_and_team():
+    new_league = League(name='Lotto Ekstraklasa')
+    new_league.save()
+    new_team = Team(name='Lech Poznań', image='lech_poznan.png', league=new_league)
+    new_team.save()
