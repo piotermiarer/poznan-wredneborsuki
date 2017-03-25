@@ -1,7 +1,9 @@
 {% extends 'ballegro/base.html' %}
 {% block content %}
-    {% for r in results %}
-    <a href="{{ r.url }}"><img src="{{ r.images.0.url }}"/></a>
-    <div>name: {{ r.name }}, price: {{ r.prices.buyNow.amount}}{{ r.prices.buyNow.currency}}</div>
-    {% endfor %}
+    <div class="jumbotron center main" id="offers">
+        {% for r in results %}
+        <a href="{{ r.url }}"><img src="{{ r.images.0.url }}"/></a>
+        <div>name: {{ r.name }}, price: {{ r.prices.buyNow.amount}}{{ r.prices.buyNow.currency}}</div>
+        {% endfor %}
+    </div>
 {% endblock content %}

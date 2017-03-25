@@ -2,7 +2,7 @@
 {% block content %}
 
   <h1> Skompletuj swój ubiór! </h1>
-  <div class="jumbotron center" id="upcoming">
+  <div class="jumbotron center main" id="root">
     <h2> Nadchodzące mecze </h2>
     <ul>
       {% for match in upcoming_matches.fixtures|slice:":5" %}
