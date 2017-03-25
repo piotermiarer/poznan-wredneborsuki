@@ -1,0 +1,44 @@
+{% extends 'ballegro/base.html' %}
+{% block content %}
+<<<<<<< HEAD
+  <h1> Skompletuj swój ubiór! </h1>
+  <div class="row center" id="upcoming">
+    <h2> Nadchodzące mecze </h2>
+    <ul>
+      {% for match in upcoming_matches.fixtures %}
+        <li>
+          {{ match.homeTeamName }} : {{ match.awayTeamName }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <br/>
+  <div class="container">
+    <div class="cols" id="tiles">
+      {% for team in teams %}
+        <div class="col-xs-6 col-md-3">
+          <a href="" class="thumbnail">
+            <img src="{{ team.image }}" class="card-img-top"/>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+    <!-- {% for team in teams %}
+    <div class="team">
+        <h4>{{ team.name }}</h3>
+        <img src="{{ team.image }}"/>
+=======
+    <div id="root" class="container">
+        <p>Hello, boys!</p>
+        {% for team in teams %}
+        <div class="team">
+            <h4>{{ team.name }}</h3>
+            <img src="{{ team.image }}"/>
+        </div>
+        {% endfor %}
+>>>>>>> daa432acd6aa4e0ea2f14c577900c3f6bb6cc74d
+    </div>
+    {% endfor %} -->
+{% endblock content %}

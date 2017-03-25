@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ballegro</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <header class="navbar navbar-fixed-top navbar-inverse">
+          <div class="container">
+            <a href="{% url 'ballegro:root' %}" id="logo">Ballegro</a>
+            <nav>
+                <ul class="nav navbar-nav">
+                  <!-- <li><a href="{% url 'ballegro:root' %}">Ballegro</a></li> -->
+                </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="container">
+        {% block content %}
+        {% endblock content %}
+<<<<<<< HEAD
+        </div>
+        
+        <footer class="footer">
+=======
+	<footer class="footer">
+
+>>>>>>> daa432acd6aa4e0ea2f14c577900c3f6bb6cc74d
+          <nav>
+            <small>
+              Ballegro created by:
+            </small>
+            <ul>
+              <li><a href="https://github.com/kasztanka">@Madzia</a></li>
+              <li><a href="https://github.com/piotermiarer">@Piotr</a></li>
+              <li><a href="https://github.com/mrspejn">@Tomek</a></li>
+              <li><a href="https://github.com/k4ju/">@Kaju</a></li>
+            </ul>
+          </nav>
+        </footer>
+        <script src="{% static 'js/bundle.js' %}"></script>
+    </body>
+</html>
