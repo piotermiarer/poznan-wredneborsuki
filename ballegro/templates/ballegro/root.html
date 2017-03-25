@@ -18,7 +18,7 @@
       {% for team in teams %}
         <div class="col-xs-6 col-md-3" id="team-tile">
           <a href="{% url 'ballegro:team_show' team_name=team %}" class="thumbnail">
-            <img src="{{ team.image }}" class="card-img-top" img="{{ team.name }}"/>
+            <img src="{{ team.image }}" class="card-img-top" alt="{{ team.name }}"/>
           </a>
         </div>
       {% endfor %}
