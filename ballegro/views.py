@@ -4,10 +4,13 @@ from .models import Team
 from urllib.parse import unquote
 
 from .api_allegro import search_for
+from .matches import get_upcoming
 
 def root(request):
     teams = Team.objects.all()
-    return render(request, 'ballegro/root.html', {'teams': teams})
+    upcoming = get_upcoming()
+    return render(request, 'ballegro/root.html',
+        {'teams': teams, 'upcoming_matches': upcoming})
 
 def team_show(request, team_name):
     team_name = team_name.replace('_', ' ')
