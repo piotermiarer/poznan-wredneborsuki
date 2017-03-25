@@ -2,28 +2,29 @@
 {% block content %}
 <div class="container main" id="all-teams">
   <div class="row center">
-    <h1> Wybierz swój zespół! </h1>
+    <h1 class="invite"> Wybierz swój zespół! </h1>
   </div>
   <div class="row jumbotron">
     <aside class="col-md-3" id="leagues">
-      <ul>
+      <ul class="league-manu">
       {% for league in leagues_with_teams %}
-        <li>  {{ league.name }} </li>
+        <li><a class="league-link" data-league="{{league.name}}"> {{ league.name }} </a></li>
       {% endfor %}
       </ul>
     </aside>
-    <div class="jumbotron">
     <div class="col-md-9">
       {% for league, teams in leagues_with_teams.items %}
-      <h2> {{ league.name }} </h2>
-      <div class="cols" id="tiles">
-        {% for team in teams %}
-          <div class="col-xs-6 col-md-3" id="team-tile">
-            <a href="{% url 'ballegro:team_show' team_name=team %}" class="thumbnail">
-              <img src="{{ team.image }}" class="card-img-top" alt="{{ team.name }}"/>
-            </a>
+      <div class="league-container" data-league="{{league.name}}">
+          <h2> {{ league.name }} </h2>
+          <div class="cols" id="tiles">
+            {% for team in teams %}
+              <div class="col-xs-6 col-md-3" id="team-tile">
+                <a href="{% url 'ballegro:team_show' team_name=team %}" class="thumbnail">
+                  <img src="{{ team.image }}" class="card-img-top" alt="{{ team.name }}"/>
+                </a>
+              </div>
+            {% endfor %}
           </div>
-        {% endfor %}
       </div>
       {% endfor %}
     </div>

@@ -1,6 +1,45 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 const utils = require('./utils');
 
+module.exports = function allTeams() {
+    const containers = document.getElementsByClassName('league-container');
+    const links = document.getElementsByClassName('league-link');
+    const leagueLinkMap = {};
+
+    utils.toArray(links).forEach((link, i) => {
+        leagueLinkMap[link.getAttribute('data-league')] = { link };
+        if (i == 0) link.setAttribute('data-active', true);
+    });
+    utils.toArray(containers).forEach(container => {
+        leagueLinkMap[container.getAttribute('data-league')].container = container;
+    });
+
+    hideInactive(leagueLinkMap);
+
+    utils.objectForEach(leagueLinkMap, (_, {link, container}) => {
+        link.addEventListener('click', event => {
+            swapActive(leagueLinkMap);
+            event.target.setAttribute('data-active', true);
+            hideInactive(leagueLinkMap);
+        });
+    });
+}
+
+function swapActive(leagues) {
+    utils.objectForEach(leagues, (_, {link, container}) => {
+        if (link.getAttribute('data-active')) link.removeAttribute('data-active');
+    });
+}
+function hideInactive(leagues) {
+    utils.objectForEach(leagues, (_, {link, container}) => {
+        if (link.getAttribute('data-active')) container.style.display = 'block';
+        else container.style.display = 'none';
+    });
+}
+
+},{"./utils":7}],2:[function(require,module,exports){
+const utils = require('./utils');
+
 const segmentNamesForType = {
     player: {
         'shorts': [ 'shorts-p1', 'shorts-p2', 'shorts-inside-p1', 'shorts-inside-p2' ],
@@ -78,9 +117,11 @@ function darken(el, pcnt) {
     el.style.fill = `rgb(${val[0]}, ${val[1]}, ${val[2]})`;
 }
 
-},{"./utils":6}],2:[function(require,module,exports){
+},{"./utils":7}],3:[function(require,module,exports){
 const teamShow = require('./team-show');
 const offers = require('./offers');
+const allTeams = require('./all-teams');
+
 const initializeSearchbar = require('./searchbar');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -89,15 +130,16 @@ document.addEventListener('DOMContentLoaded', () => {
     switch (route) {
         case 'team-show': teamShow(); break;
         case 'offers': offers(); break;
+        case 'all-teams': allTeams(); break;
     }
 });
 
-},{"./offers":3,"./searchbar":4,"./team-show":5}],3:[function(require,module,exports){
+},{"./all-teams":1,"./offers":4,"./searchbar":5,"./team-show":6}],4:[function(require,module,exports){
 module.exports = function offers() {
 
 }
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 const utils = require('./utils');
 
 module.exports = function searchbar(element) {
@@ -171,7 +213,7 @@ function removeSuggestion(el) {
     el.parentNode.removeChild(el);
 }
 
-},{"./utils":6}],5:[function(require,module,exports){
+},{"./utils":7}],6:[function(require,module,exports){
 const SVGInjector = require('svg-injector');
 const createFigure = require('./interactive-figure');
 const utils = require('./utils');
@@ -212,7 +254,7 @@ function injectSVGs(opts) {
 
 const playerElements = {};
 
-},{"./interactive-figure":1,"./utils":6,"svg-injector":7}],6:[function(require,module,exports){
+},{"./interactive-figure":2,"./utils":7,"svg-injector":8}],7:[function(require,module,exports){
 
 module.exports = {
     toArray(list) {
@@ -252,7 +294,7 @@ module.exports = {
 
 }
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 /**
  * SVGInjector v1.1.3 - Fast, caching, dynamic inline SVG DOM injection library
  * https://github.com/iconic/SVGInjector
@@ -718,6 +760,6 @@ module.exports = {
 
 }(window, document));
 
-},{}]},{},[2])
+},{}]},{},[3])
 
 //# sourceMappingURL=bundle.js.map

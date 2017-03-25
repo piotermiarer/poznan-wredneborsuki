@@ -328,6 +328,13 @@ svg {
   padding-top: 0px;
   display: flex;
 }
+.league-manu {
+    list-style: none;
+    a {
+        color: #fff;
+        cursor: pointer;
+    }
+}
 
 #breadcrumbs {
     padding-top: 20px;

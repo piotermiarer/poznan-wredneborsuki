@@ -1,5 +1,7 @@
 const teamShow = require('./team-show');
 const offers = require('./offers');
+const allTeams = require('./all-teams');
+
 const initializeSearchbar = require('./searchbar');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,5 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     switch (route) {
         case 'team-show': teamShow(); break;
         case 'offers': offers(); break;
+        case 'all-teams': allTeams(); break;
     }
 });

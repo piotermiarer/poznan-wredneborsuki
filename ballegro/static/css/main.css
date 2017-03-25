@@ -265,6 +265,11 @@ svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1
   padding-left: 0px;
   padding-top: 0px;
   display: flex; }
+.league-manu {
+  list-style: none; }
+  .league-manu a {
+    color: #fff;
+    cursor: pointer; }
 
 #breadcrumbs {
   padding-top: 20px;
