@@ -4,6 +4,8 @@
         {% for r in results %}
         <a href="{{ r.url }}"><img src="{{ r.images.0.url }}"/></a>
         <div>name: {{ r.name }}, price: {{ r.prices.buyNow.amount}}{{ r.prices.buyNow.currency}}</div>
+        {% empty %}
+          <p>Wygląda na to, że nie mamy tego czego szukasz</p>
         {% endfor %}
     </div>
 {% endblock content %}
