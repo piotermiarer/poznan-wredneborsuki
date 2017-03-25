@@ -1,0 +1,16 @@
+{% extends 'ballegro/base.html' %}
+{% block content %}
+
+  <div class="jumbotron center" id="upcoming">
+    <h2> Ligi </h2>
+      {% for league, ts in teams.items %}
+        <div class="col-xs-6 col-md-3" id="team-tile">{{ league }}
+          {% for team in ts %}
+              <p>{{ team }}</p>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+{% endblock content %}

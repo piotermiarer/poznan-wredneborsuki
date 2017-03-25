@@ -5,6 +5,8 @@ class League(models.Model):
 
     name = models.TextField()
 
+    def __str__(self):
+        return self.name
 
 class Team(models.Model):
 

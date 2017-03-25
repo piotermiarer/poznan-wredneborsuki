@@ -8,4 +8,5 @@ urlpatterns = [
         views.team_show, name='team_show'),
     url(r'^search/(?P<clothes>.+)/(?P<team_name>.+)',
         views.search, name='search'),
+    url(r'^index$', views.index, name='index'),
 ]
