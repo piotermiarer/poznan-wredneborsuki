@@ -14,10 +14,10 @@
     </aside>
     {{ leageus_with_teams }}
     <div class="jumbotron">
-      {% for league in leagues_with_teams %}
+      {% for league, teams in leagues_with_teams.items %}
       <h2> {{ league.name }} </h2>
       <div class="cols" id="tiles">
-        {% for team in league.teams %}
+        {% for team in teams %}
           <div class="col-xs-6 col-md-3" id="team-tile">
             <a href="{% url 'ballegro:team_show' team_name=team %}" class="thumbnail">
               <img src="{{ team.image }}" class="card-img-top"/>

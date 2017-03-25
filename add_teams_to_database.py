@@ -21,12 +21,16 @@ def main():
     with open('leagues.json', 'r', encoding="utf8") as f:
         leagues = json.load(f)
 
+    distinct_leagues = {"1. Bundesliga 2016/17", "Premier League 2016/17",
+        "Serie A 2016/17", "Primera Division 2016/17", "Ligue 1 2016/17",
+        "Eredivisie 2016/17","Primeira Liga 2016/17"}
+
     add_all_leagues = False
     if len(sys.argv) < 2:
         add_all_leagues = True
 
     for league in leagues:
-        if add_all_leagues or league['name'] == sys.argv[1]:
+        if (add_all_leagues and league['name'] in distinct_leagues) or (not add_all_leagues and league['name'] == sys.argv[1]):
             new_league = League(name=league['name'])
             new_league.save()
             for team in league['teams']:
