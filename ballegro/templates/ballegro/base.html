@@ -12,6 +12,8 @@
     <body>
         <header class="navbar navbar-fixed-top navbar-inverse">
             <a href="{% url 'ballegro:root' %}" id="logo">Ballegro</a>
+            {% block breadcrumb %}
+            {% endblock breadcrumb %}
             <div class="navbar-right">
               <a href="{% url 'ballegro:all_teams' %}"> All teams </a>
             </div>

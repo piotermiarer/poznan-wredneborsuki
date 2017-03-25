@@ -14,7 +14,6 @@ def root(request):
     for team in all_teams:
         if team.name in upcoming_teams[:10]:
             teams.append(team)
-
     return render(request, 'ballegro/root.html',
         {'teams': teams, 'upcoming_matches': upcoming})
 
@@ -52,8 +51,9 @@ def all_teams(request):
 def search_team(request, team_name):
     teams = Team.objects.filter(name__contains=team_name)
     team_names = teams.values_list('name')
-    image_names = teams.values_list('url_name')
+    image_names = teams.values_list('image')
     result = []
     for team in zip(team_names, image_names):
         result.append(team)
+    print(result)
     return HttpResponse(json.dumps(result), content_type='application/json')
