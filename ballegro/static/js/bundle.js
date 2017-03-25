@@ -96,18 +96,18 @@ module.exports = function teamShow() {
     injectSVGs({}).then(() => {
         const [teamName] = window.location.href.split('/').slice(-1);
         createFigure(document.querySelector('#player'), 'player', {
-            shorts: () => goTo(`offers/spodenki/${teamName}`),
-            socks: () => goTo(`offers/getry/${teamName}`),
-            shirt: () => goTo(`offers/koszulka/${teamName}`),
-            boots: () => goTo(`offers/buty/${teamName}`),
-            ball: () => goTo(`offers/piłka/${teamName}`)
+            shorts: () => goTo(`offers/${teamName}/spodenki`),
+            socks: () => goTo(`offers/${teamName}/getry`),
+            shirt: () => goTo(`offers/${teamName}/koszulka`),
+            boots: () => goTo(`offers/${teamName}/buty`),
+            ball: () => goTo(`offers/${teamName}/piłka`)
         });
         createFigure(document.querySelector('#fan'), 'fan', {
-            scarf: () => goTo(`offers/szalik/${teamName}`),
-            hat: () => goTo(`offers/czapka/${teamName}`),
-            tracksuit: () => goTo(`offers/dres/${teamName}`),
-            shirt: () => goTo(`offers/koszulka/${teamName}`),
-            boots: () => goTo(`offers/buty/${teamName}`)
+            scarf: () => goTo(`offers/${teamName}/szalik`),
+            hat: () => goTo(`offers/${teamName}/czapka`),
+            tracksuit: () => goTo(`offers/${teamName}/dres`),
+            shirt: () => goTo(`offers/${teamName}/koszulka`),
+            boots: () => goTo(`offers/${teamName}/buty`)
         });
     });
 }

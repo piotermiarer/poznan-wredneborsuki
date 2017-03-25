@@ -145,3 +145,13 @@ svg {
         cursor: pointer;
     }
 }
+
+@keyframes roll-and-wait {
+  0% {
+    transform: rotate(0); }
+  10% {
+    transform: rotate(0); }
+  90% {
+    transform: rotate(540deg); }
+  100% {
+    transform: rotate(540deg); } }
