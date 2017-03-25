@@ -26,7 +26,6 @@ module.exports = function createIntractiveFigure(svg, type, handlers) {
     const segmentsElements = utils.objectMap(segmentsNames, (key, segments) => {
         return segments.map(seg => svg.querySelector(`#${seg}`));
     });
-    console.log(segmentsElements);
     utils.objectForEach(segmentsElements, (key, segments) => {
         segments.forEach(seg => {
             seg.gearGroup = key;
@@ -79,17 +78,27 @@ function darken(el, pcnt) {
     el.style.fill = `rgb(${val[0]}, ${val[1]}, ${val[2]})`;
 }
 
-},{"./utils":4}],2:[function(require,module,exports){
+},{"./utils":5}],2:[function(require,module,exports){
 
 const teamShow = require('./team-show');
+const offers = require('./offers');
 
 document.addEventListener('DOMContentLoaded', () => {
-    teamShow();
+    const route = document.querySelector('.main').getAttribute('id');
+    switch (route) {
+        case 'team-show': teamShow(); break;
+        case 'offers': offers(); break;
+    }
 });
 
-},{"./team-show":3}],3:[function(require,module,exports){
+},{"./offers":3,"./team-show":4}],3:[function(require,module,exports){
+module.exports = function offers() {
+
+}
+
+},{}],4:[function(require,module,exports){
 const SVGInjector = require('svg-injector');
-const createFigure = require('./interative-figure');
+const createFigure = require('./interactive-figure');
 const utils = require('./utils');
 
 module.exports = function teamShow() {
@@ -128,7 +137,7 @@ function injectSVGs(opts) {
 
 const playerElements = {};
 
-},{"./interative-figure":1,"./utils":4,"svg-injector":5}],4:[function(require,module,exports){
+},{"./interactive-figure":1,"./utils":5,"svg-injector":6}],5:[function(require,module,exports){
 module.exports = {
     toArray(list) {
         return Array.prototype.slice.call(list, 0);
@@ -156,7 +165,7 @@ module.exports = {
 
 }
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /**
  * SVGInjector v1.1.3 - Fast, caching, dynamic inline SVG DOM injection library
  * https://github.com/iconic/SVGInjector

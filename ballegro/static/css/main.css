@@ -16,7 +16,7 @@ body {
   display: flex;
   align-items: flex-end;
   flex-wrap: nowrap;
-  justify-content: space-around; }
+  justify-content: center; }
   .figures svg {
     display: block; }
 
@@ -81,9 +81,9 @@ footer {
       margin-left: 15px; }
 
 /* root */
-#upcoming ul {
+#root ul {
   list-style: none; }
-  #upcoming ul li {
+  #root ul li {
     font-size: 1.5em;
     font-weight: bold; }
 
@@ -96,19 +96,26 @@ footer {
   display: flex;
   justify-content: space-between; }
   .banner__emblem {
-    max-width: 200px;
-    max-height: 200px;
-    width: 200px;
-    height: 200px; }
+    max-width: 10vw;
+    max-height: 10vw;
+    width: 10vw;
+    height: 10vw; }
   .banner__heading {
     font-weight: 800;
-    font-size: 3.5em;
+    font-size: 3vw;
     line-height: 2em; }
 
 svg #shorts-p1, svg #shorts-p2, svg #shorts-inside-p1, svg #shorts-inside-p2, svg #socks,
 svg #shirt-top, svg #shirt-back, svg #boot1-top, svg #boot2-top, svg #boot1-down, svg #boot2-down,
 svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1-top-fan, svg #boot2-top-fan, svg #boot1-down-fan, svg #boot2-down-fan {
   cursor: pointer; }
+
+#player {
+  height: 60vh;
+  margin-right: 10vw; }
+
+#fan {
+  height: 70vh; }
 
 @keyframes roll-and-wait {
   0% {
