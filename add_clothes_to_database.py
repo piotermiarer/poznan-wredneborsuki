@@ -12,7 +12,7 @@ CLOTHES = {
     'shorts': {'category': 'Sport i Turystyka', 'name': 'spodenki', 'add_team_to_phrase': True},
     'socks': {'category': None, 'name': 'getry', 'add_team_to_phrase': True},
     'shirt': {'category': 'Klubowe', 'name': 'koszulka', 'add_team_to_phrase': True},
-    'boots': {'category': 'Korki', 'name': 'korki', 'add_team_to_phrase': False},
+    'boots': {'category': 'Piłka nożna', 'name': 'korki', 'add_team_to_phrase': False},
     'ball': {'category': 'Sport i Turystyka', 'name': 'piłka', 'add_team_to_phrase': False},
     'scarf': {'category': 'Sport i Turystyka', 'name': 'szalik', 'add_team_to_phrase': True},
     'hat': {'category': None, 'name': 'czapka', 'add_team_to_phrase': True},
