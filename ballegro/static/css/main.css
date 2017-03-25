@@ -52,3 +52,13 @@ footer {
     footer ul li {
       float: left;
       margin-left: 15px; }
+
+/* root */
+#upcoming ul {
+  list-style: none; }
+  #upcoming ul li {
+    font-size: 1.5em;
+    font-weight: bold; }
+
+.thumbnail img {
+  height: 200px; }
