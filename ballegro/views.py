@@ -52,7 +52,8 @@ def all_teams(request):
 def search_team(request, team_name):
     teams = Team.objects.filter(name__contains=team_name)
     team_names = teams.values_list('name')
-    result = dict()
-    for i, team_name in enumerate(team_names):
-        result[i] = team_name
+    image_names = teams.values_list('url_name')
+    result = []
+    for team in zip(team_names, image_names):
+        result.append(team)
     return HttpResponse(json.dumps(result), content_type='application/json')
