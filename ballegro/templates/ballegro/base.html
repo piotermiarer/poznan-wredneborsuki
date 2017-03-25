@@ -16,6 +16,10 @@
             {% endblock breadcrumb %}
             <div class="navbar-right">
               <a href="{% url 'ballegro:all_teams' %}"> All teams </a>
+              <div class="searchbar" id="searchbar">
+                  <input class="searchbar__input" placeholder="znajdź drużyne"/>
+                  <div class="searchbar__sugestions-list"></div>
+              </div>
             </div>
         </header>
 

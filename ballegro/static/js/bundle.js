@@ -78,25 +78,61 @@ function darken(el, pcnt) {
     el.style.fill = `rgb(${val[0]}, ${val[1]}, ${val[2]})`;
 }
 
-},{"./utils":5}],2:[function(require,module,exports){
-
+},{"./utils":6}],2:[function(require,module,exports){
 const teamShow = require('./team-show');
 const offers = require('./offers');
+const initializeSearchbar = require('./searchbar');
 
 document.addEventListener('DOMContentLoaded', () => {
     const route = document.querySelector('.main').getAttribute('id');
+    initializeSearchbar(document.querySelector('#searchbar'));
     switch (route) {
         case 'team-show': teamShow(); break;
         case 'offers': offers(); break;
     }
 });
 
-},{"./offers":3,"./team-show":4}],3:[function(require,module,exports){
+},{"./offers":3,"./searchbar":4,"./team-show":5}],3:[function(require,module,exports){
 module.exports = function offers() {
 
 }
 
 },{}],4:[function(require,module,exports){
+const utils = require('./utils');
+
+module.exports = function searchbar(element) {
+    const url = `${window.location.protocol}//${window.location.host}/search_team`;
+    const input = element.querySelector('.searchbar__input');
+    const sugestions = element.querySelector('.searchbar__sugestions-list');
+    let phrase = '';
+
+    const fn = utils.debounce(phrase => {
+        getResultsForPhrase(url, phrase).then(response => displaySuggestions(response, sugestions));
+    }, 500);
+
+    input.addEventListener('keypress', event => {
+        phrase += event.key;
+        input.value = phrase;
+        if (phrase.length > 3) fn(phrase);
+        event.preventDefault();
+    });
+    input.addEventListener('keydown', event => {
+        if (event.key === 'Backspace') {
+            if (phrase.length) phrase = phrase.slice(0, -1);
+        }
+        input.value = phrase;
+    });
+}
+
+function getResultsForPhrase(url, phrase) {
+    return fetch(`${url}/${phrase}`);
+}
+
+function displaySuggestions(results, container) {
+    
+}
+
+},{"./utils":6}],5:[function(require,module,exports){
 const SVGInjector = require('svg-injector');
 const createFigure = require('./interactive-figure');
 const utils = require('./utils');
@@ -137,7 +173,8 @@ function injectSVGs(opts) {
 
 const playerElements = {};
 
-},{"./interactive-figure":1,"./utils":5,"svg-injector":6}],5:[function(require,module,exports){
+},{"./interactive-figure":1,"./utils":6,"svg-injector":7}],6:[function(require,module,exports){
+
 module.exports = {
     toArray(list) {
         return Array.prototype.slice.call(list, 0);
@@ -161,11 +198,22 @@ module.exports = {
             }
         }
         return result;
+    },
+    debounce(fn, delay) {
+        let timeoutID;
+
+        return function(...args) {
+            if (timeoutID) clearTimeout(timeoutID);
+            timeoutID = setTimeout(() => {
+                fn.apply(null, args);
+            }, delay);
+        }
+
     }
 
 }
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 /**
  * SVGInjector v1.1.3 - Fast, caching, dynamic inline SVG DOM injection library
  * https://github.com/iconic/SVGInjector
