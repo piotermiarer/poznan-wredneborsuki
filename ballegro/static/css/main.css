@@ -229,12 +229,16 @@ svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1
   outline: none; }
 
 .searchbar__sugestions-list {
-  height: 34px;
   background-color: #f1f1f1;
   position: absolute;
+  list-style: none;
+  line-height: 35px;
   top: 50px;
   right: 0px;
   width: 250px; }
+
+.sugestion a {
+  color: #ff5a00; }
 
 @keyframes roll-and-wait {
   0% {
