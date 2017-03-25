@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="23.226465mm"
-   height="23.679777mm"
-   viewBox="0 0 82.298499 83.904722"
+   width="22.727131mm"
+   height="22.746546mm"
+   viewBox="0 0 80.529204 80.597997"
    id="svg4347"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -86,9 +86,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="-119.21739"
-     inkscape:cy="53.81489"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="1.3766003"
+     inkscape:cy="37.960263"
      inkscape:document-units="px"
      inkscape:current-layer="g4787"
      showgrid="false"
@@ -109,7 +109,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -117,17 +117,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0.26028236,0.07464815)">
+     transform="translate(0.42793944,0.10668004)">
     <g
        transform="translate(-173.86901,-639.0513)"
        id="g4787">
-      <ellipse
-         ry="40.107685"
-         rx="39.097534"
-         cy="679.98914"
-         cx="215.01488"
-         id="path4423"
-         style="opacity:1;fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:#ff5a00;stroke-width:1.7;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff5a00;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path4164"
+         cx="213.70567"
+         cy="679.27802"
+         r="38.764603" />
       <path
          transform="matrix(0.59371692,0.36768216,-0.35101788,0.56680817,323.92513,215.88115)"
          inkscape:transform-center-y="0.045960489"
@@ -148,7 +147,7 @@
          sodipodi:type="star" />
       <path
          mask="none"
-         transform="matrix(0.296061,0.40030211,-0.17503746,0.61709414,235.80617,186.54421)"
+         transform="matrix(0.296061,0.40030211,-0.17503746,0.61709414,235.80617,185.15525)"
          inkscape:transform-center-y="0.050038293"
          inkscape:transform-center-x="0.60502032"
          d="m 198.49499,663.45352 24.83559,-6.90913 14.24559,21.485 -16.03133,20.1876 -24.15349,-9.00839 z"
@@ -168,7 +167,7 @@
          clip-path="url(#clipPath4157)" />
       <path
          mask="none"
-         transform="matrix(-0.4025439,0.25356039,-0.53457378,-0.35239345,654.96507,897.61553)"
+         transform="matrix(-0.4025439,0.25356039,-0.53457378,-0.35239345,653.57611,894.96387)"
          inkscape:transform-center-y="0.13947956"
          inkscape:transform-center-x="-0.27162788"
          d="m 198.49499,663.45352 24.83559,-6.90913 14.24559,21.485 -16.03133,20.1876 -24.15349,-9.00839 z"
@@ -188,7 +187,7 @@
          clip-path="url(#clipPath4172)" />
       <path
          mask="none"
-         transform="matrix(0.01272138,0.43625262,-0.52425742,0.41235809,597.26442,325.00834)"
+         transform="matrix(0.01272138,0.43625262,-0.52425742,0.41235809,594.4865,324.62953)"
          inkscape:transform-center-y="-0.91965608"
          inkscape:transform-center-x="0.06596116"
          d="m 198.49499,663.45352 24.83559,-6.90913 14.24559,21.485 -16.03133,20.1876 -24.15349,-9.00839 z"
@@ -208,7 +207,7 @@
          clip-path="url(#clipPath4167)" />
       <path
          mask="none"
-         transform="matrix(0.52921168,0.18413712,0.29471596,0.64106588,-72.061287,183.93282)"
+         transform="matrix(0.52921168,0.18413712,0.29471596,0.64106588,-74.586668,185.06924)"
          inkscape:transform-center-y="1.3606279"
          inkscape:transform-center-x="0.61800957"
          d="m 198.49499,663.45352 24.83559,-6.90913 14.24559,21.485 -16.03133,20.1876 -24.15349,-9.00839 z"
@@ -228,7 +227,7 @@
          clip-path="url(#clipPath4162)" />
       <path
          mask="none"
-         transform="matrix(0.26291659,-0.39790413,0.60138159,-0.09409471,-263.15663,797.1296)"
+         transform="matrix(0.26291659,-0.39790413,0.60138159,-0.09409471,-263.40916,798.26602)"
          inkscape:transform-center-y="-0.34483764"
          inkscape:transform-center-x="-0.76710944"
          d="m 198.49499,663.45352 24.83559,-6.90913 14.24559,21.485 -16.03133,20.1876 -24.15349,-9.00839 z"
