@@ -1,4 +1,11 @@
 {% extends 'ballegro/base.html' %}
+
+{% load staticfiles %}
 {% block content %}
-    <h3>{{ team.name }}</h3>
+    <div id="team-show" class="main">
+        <div class="figures">
+            <img class="svg-injection" src="{% static 'images/player.svg' %}" />
+            <img class="svg-injection" src="{% static 'images/fan.svg' %}" />
+        </div>
+    </div>
 {% endblock content %}
