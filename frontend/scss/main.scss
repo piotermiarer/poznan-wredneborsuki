@@ -43,6 +43,21 @@ body {
     background-color: #353230;
     height: 70px;
 }
+.navbar-right {
+  position: relative;
+  float: right;
+  margin-right: 20vw;
+  font-size: 1.2em;
+  padding-top: 20px;
+  a {
+    color: white;
+
+    &:hover {
+      color: #ff5a00;
+      text-decoration: none;
+    }
+  }
+}
 #team-show {
     #logo {
         left: -4px;
