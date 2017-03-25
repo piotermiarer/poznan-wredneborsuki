@@ -4,7 +4,7 @@
   <div class="row center">
     <h1> Wybierz swój zespół! </h1>
   </div>
-  <div class="row">
+  <div class="row jumbotron">
     <aside class="col-md-3" id="leagues">
       <ul>
       {% for league in leagues_with_teams %}
@@ -12,8 +12,8 @@
       {% endfor %}
       </ul>
     </aside>
-    {{ leageus_with_teams }}
     <div class="jumbotron">
+    <div class="col-md-9">
       {% for league, teams in leagues_with_teams.items %}
       <h2> {{ league.name }} </h2>
       <div class="cols" id="tiles">

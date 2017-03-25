@@ -1,5 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from urllib.parse import unquote
+import json
+from django.http import HttpResponse
 
 from .models import Team, League, Clothes
 from .api_allegro import get_offers
@@ -44,4 +46,8 @@ def all_teams(request):
 
 def search_team(request, team_name):
     teams = Team.objects.filter(name__contains=team_name)
-    return teams
+    team_names = teams.values_list('name')
+    result = dict()
+    for i, team_name in enumerate(team_names):
+        result[i] = team_name
+    return HttpResponse(json.dumps(result), content_type='application/json')

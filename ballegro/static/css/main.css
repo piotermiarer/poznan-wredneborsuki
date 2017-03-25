@@ -220,12 +220,16 @@ svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1
   border-radius: 6px; }
   #leagues ul {
     float: left;
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-left: 5px; }
     #leagues ul li {
       float: left;
       margin-left: 15px;
       color: white;
       font-size: 1.2em;
       padding-bottom: 10px; }
-      
-/*# sourceMappingURL=main.css.map */
+
+.row.jumbotron {
+  padding-left: 0px;
+  padding-top: 0px;
+  display: flex; }
