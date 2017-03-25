@@ -15,7 +15,18 @@ body {
     margin-bottom: 10px;
   }
 }
-
+.figures {
+    width: 70vw;
+    margin: 0 auto;
+    min-height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    svg {
+        display: block;
+    }
+}
 /* header */
 
 #logo {
