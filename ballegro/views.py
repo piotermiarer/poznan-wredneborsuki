@@ -41,3 +41,7 @@ def all_teams(request):
     leagues = League.objects.all()
     leagues_with_teams = {league: league.team_set.all() for league in leagues}
     return render(request, 'ballegro/all_teams.html', {'leagues_with_teams': leagues_with_teams})
+
+def search_team(request, team_name):
+    teams = Team.objects.filter(name__contains=team_name)
+    return teams
