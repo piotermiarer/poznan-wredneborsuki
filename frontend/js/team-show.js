@@ -16,7 +16,7 @@ module.exports = function teamShow() {
             scarf: () => goTo(`offers/${teamName}/scarf/1`),
             hat: () => goTo(`offers/${teamName}/hat/1`),
             tracksuit: () => goTo(`offers/${teamName}/tracksuit/1`),
-            shirt: () => goTo(`offers/${teamName}/hoody/1`),
+            shirt: () => goTo(`offers/${teamName}/hoodie/1`),
             boots: () => goTo(`offers/${teamName}/boots/1`)
         });
     });
