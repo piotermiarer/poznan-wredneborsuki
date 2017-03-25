@@ -1,16 +1,33 @@
 {% extends 'ballegro/base.html' %}
 {% block content %}
 <div class="container main" id="all-teams">
-  <div class="jumbotron center">
-    <h2> Ligi </h2>
-      {% for league, teams in leagues_with_teams.items %}
-        <div class="col-xs-6 col-md-3" id="team-tile">{{ league }}
-          {% for team in teams %}
-              <p>{{ team }}</p>
-          {% endfor %}
-        </div>
+  <div class="row center">
+    <h1> Wybierz swój zespół! </h1>
+  </div>
+  <div class="row">
+    <aside class="col-md-3" id="leagues">
+      <ul>
+      {% for league in leagues_with_teams %}
+        <li>  {{ league.name }} </li>
+      {% endfor %}
+      </ul>
+    </aside>
+    {{ leageus_with_teams }}
+    <div class="jumbotron">
+      {% for league in leagues_with_teams %}
+      <h2> {{ league.name }} </h2>
+      <div class="cols" id="tiles">
+        {% for team in league.teams %}
+          <div class="col-xs-6 col-md-3" id="team-tile">
+            <a href="{% url 'ballegro:team_show' team_name=team %}" class="thumbnail">
+              <img src="{{ team.image }}" class="card-img-top"/>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
       {% endfor %}
     </div>
   </div>
+</div>
 
 {% endblock content %}

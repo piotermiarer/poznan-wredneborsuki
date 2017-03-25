@@ -270,3 +270,21 @@ svg {
   100% {
     transform: rotate(360deg); }
 }
+
+/* all_teams */
+
+#leagues {
+  background-color: gray;
+  border-radius: 6px;
+  ul {
+    float: left;
+    padding-top: 20px;
+    li {
+        float: left;
+        margin-left: 15px;
+        color: white;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+  }
+}

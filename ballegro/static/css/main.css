@@ -213,3 +213,17 @@ svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
+
+/* all_teams */
+#leagues {
+  background-color: gray;
+  border-radius: 6px; }
+  #leagues ul {
+    float: left;
+    padding-top: 20px; }
+    #leagues ul li {
+      float: left;
+      margin-left: 15px;
+      color: white;
+      font-size: 1.2em;
+      padding-bottom: 10px; }
