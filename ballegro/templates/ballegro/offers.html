@@ -1,11 +1,18 @@
 {% extends 'ballegro/base.html' %}
 {% block content %}
-    <div class="jumbotron center main" id="offers">
-        {% for r in results %}
-        <a href="{{ r.url }}"><img src="{{ r.images.0.url }}"/></a>
-        <div>name: {{ r.name }}, price: {{ r.prices.buyNow.amount}}{{ r.prices.buyNow.currency}}</div>
-        {% empty %}
-          <p>Wygląda na to, że nie mamy tego czego szukasz</p>
-        {% endfor %}
+    <div class="center main" id="offers">
+        <ul class="offers-list">
+            {% for r in results %}
+            <li class="offers-list__element">
+                <a href="{{ r.url }}" class="offer thumbnail">
+                    <div class="offer__details">
+                        <h4 class="offer__title">{{r.name}}</h4>
+                        <span class="offer__price">{{ r.prices.buyNow.amount}}{{ r.prices.buyNow.currency}}</span>
+                    </div>
+                    <img class="offer_image" src="{{ r.images.0.url }}"/>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 {% endblock content %}

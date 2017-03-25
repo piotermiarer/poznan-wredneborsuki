@@ -2,12 +2,20 @@
 /* universal */
 body {
   padding-top: 60px;
-  background-color: #f1f1f1; }
+  background: linear-gradient(to top right, #ffffff 0%, #ffffff 50%, #fafafa 50%, #fafafa 100%);
+  background-position: center;
+  background-attachment: fixed; }
 
 .center {
   text-align: center; }
-  .center h1 {
-    margin-bottom: 10px; }
+
+.jumbotron {
+  padding-top: 10px; }
+
+.invite {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 3em; }
 
 .figures {
   width: 70vw;
@@ -51,12 +59,13 @@ body {
     z-index: -1;
     background: url("/static/images/logo.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; }
+  #logo:hover::after {
     animation-timing-function: linear;
     animation-name: roll-and-wait;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both; }
 
 /* footer */
 footer {
@@ -80,12 +89,8 @@ footer {
       float: left;
       margin-left: 15px; }
 
-/* root */
-#root ul {
-  list-style: none; }
-  #root ul li {
-    font-size: 1.5em;
-    font-weight: bold; }
+.thumbnail {
+  cursor: pointer; }
 
 .thumbnail img {
   height: 200px; }
@@ -105,6 +110,24 @@ footer {
     font-size: 3vw;
     line-height: 2em; }
 
+.upcoming {
+  width: 650px;
+  margin: 0 auto;
+  list-style: none; }
+  .upcoming__single {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; }
+  .upcoming span {
+    width: 40%;
+    text-align: left; }
+  .upcoming span.upcoming__left {
+    text-align: right; }
+  .upcoming span.upcoming__separator {
+    width: 20%;
+    text-align: center; }
+
 svg #shorts-p1, svg #shorts-p2, svg #shorts-inside-p1, svg #shorts-inside-p2, svg #socks,
 svg #shirt-top, svg #shirt-back, svg #boot1-top, svg #boot2-top, svg #boot1-down, svg #boot2-down,
 svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1-top-fan, svg #boot2-top-fan, svg #boot1-down-fan, svg #boot2-down-fan {
@@ -117,14 +140,50 @@ svg #ball, svg #scarf, svg #hat, svg #tracksuit-down, svg #shirt-fan, svg #boot1
 #fan {
   height: 70vh; }
 
+.offers-list {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+  .offers-list a {
+    margin-bottom: 0; }
+  .offers-list__element {
+    max-width: 20%;
+    min-width: 20%;
+    padding: 5px;
+    box-sizing: border-box; }
+
+.offer {
+  border-radius: 2px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box; }
+  .offer img {
+    object-fit: contain; }
+  .offer__details {
+    color: #fff;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 90, 0, 0.9);
+    position: absolute;
+    left: 100%;
+    transition: left .25s ease;
+    z-index: 10; }
+  .offer__price {
+    font-size: 24px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+  .offer:hover .offer__details {
+    left: 0px; }
+
 @keyframes roll-and-wait {
   0% {
     transform: rotate(0); }
-  10% {
-    transform: rotate(0); }
-  90% {
-    transform: rotate(540deg); }
   100% {
-    transform: rotate(540deg); } }
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,13 @@
 {% extends 'ballegro/base.html' %}
 {% block content %}
 
-  <h1> Skompletuj swój ubiór! </h1>
+  <h2 class="invite"> Skompletuj swój ubiór! </h2>
   <div class="jumbotron center main" id="root">
     <h2> Nadchodzące mecze </h2>
-    <ul>
+    <ul class="upcoming">
       {% for match in upcoming_matches.fixtures|slice:":5" %}
-        <li>
-          {{ match.homeTeamName }} : {{ match.awayTeamName }}
+        <li class="upcoming__single">
+          <span class="upcoming__left">{{ match.homeTeamName }}</span> <span class="upcoming__separator">:</span> <span>{{ match.awayTeamName }}</span>
         </li>
       {% endfor %}
     </ul>
