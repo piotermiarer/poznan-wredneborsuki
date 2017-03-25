@@ -1,4 +1,36 @@
-polish_league = { "name": "Lotto Ekstraklasa", "teams": [] }
-for club in ["Jagiellonia Bialystok", "Legia Warszawa", "Lech Poznań", "Lechia Gdańsk", "Zagłębie Lubin", "Wisła Kraków", "Bruk-Bet Termalica Nieciecza", "Korona Kielce", "Pogoń Szczecin", "Wisła Płock", "Arka Gdynia", "Ruch Chorzów", "Śląsk Wrocław", "Piast Gliwice", "Cracovia", "Górnik Łęczna"]:
-    polish_league["teams"].append({"name": club,
-                                    "crest_url": ""})
+polish_league = { "name": "Lotto Ekstraklasa", "teams": [
+    {"name": "Jagiellonia Bialystok",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/9/90/Jagiellonia_Bia%C5%82ystok_logo.svg"},
+    {"name": "Legia Warszawa",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Legia_Warszawa.svg"},
+    {"name": "Lech Poznań",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/f/f9/KKS_Lech_Pozna%C5%84.png"},
+    {"name": "Lechia Gdańsk",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/7/7a/Lechia_gdansk.png"},
+    {"name": "Zagłębie Lubin",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/2/20/Zag%C5%82%C4%99bie_Lubin_crest.svg"},
+    {"name": "Wisła Kraków",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/b/bd/Wis%C5%82a_Krak%C3%B3w_%28crest%29.png"},
+    {"name": "Bruk-Bet Termalica Nieciecza",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/5/53/LKS_Nieciecza_logo.png"},
+    {"name": "Korona Kielce",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/7/7c/KoronaKielce.png"},
+    {"name": "Pogoń Szczecin",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/d/de/Pogon_Szczecin.png"},
+    {"name": "Wisła Płock",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/Wis%C5%82a_P%C5%82ock.png.jpg"},
+    {"name": "Arka Gdynia",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/f/f1/Arka_Gdynia_logo.png"},
+    {"name": "Ruch Chorzów",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/9/94/Ruch_Chorz%C3%B3w.svg"},
+    {"name": "Śląsk Wrocław",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/8/8f/Slask_Wroclaw_crest.png"},
+    {"name": "Piast Gliwice",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/a/a5/GKS_Piast_Gliwice.png"},
+    {"name": "Cracovia",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/3/35/Cracovia_%28football_club%29_logo.png"},
+    {"name": "Górnik Łęczna",
+    "crest_url": "https://upload.wikimedia.org/wikipedia/en/c/c9/G%C3%B3rnik_%C5%81%C4%99czna_logo.png"}
+
+] }
+# for club in [, , , ", ", ", , , , "", "", "", ", "Piast Gliwice", "", ""]:
