@@ -13,7 +13,7 @@ CLOTHES = {
     'socks': {'category': None, 'name': 'getry', 'add_team_to_phrase': True},
     'shirt': {'category': 'Klubowe', 'name': 'koszulka', 'add_team_to_phrase': True},
     'boots': {'category': 'Korki', 'name': 'korki', 'add_team_to_phrase': False},
-    'ball': {'category': 'Sport i Turystyka', 'name': 'piłka', 'add_team_to_phrase': True},
+    'ball': {'category': 'Sport i Turystyka', 'name': 'piłka', 'add_team_to_phrase': False},
     'scarf': {'category': 'Sport i Turystyka', 'name': 'szalik', 'add_team_to_phrase': True},
     'hat': {'category': None, 'name': 'czapka', 'add_team_to_phrase': True},
     'tracksuit': {'category': 'Sporty drużynowe', 'name': 'spodenki', 'add_team_to_phrase': True},
@@ -27,6 +27,7 @@ def main():
     for key, single_clothes in CLOTHES.items():
         if single_clothes['name']:
             new_clothes = Clothes(
+                url_name=key,
                 name=single_clothes['name'],
                 category=single_clothes['category'],
                 add_team_to_phrase=single_clothes['add_team_to_phrase']

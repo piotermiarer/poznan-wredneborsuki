@@ -21,6 +21,7 @@ class Team(models.Model):
 
 class Clothes(models.Model):
 
+    url_name = models.TextField(primary_key=True)
     name = models.TextField()
     category = models.TextField(blank=True, null=True)
     add_team_to_phrase = models.BooleanField()
