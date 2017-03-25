@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.core.urlresolvers import resolve
-from ballegro.models import Team, League
+from ballegro.models import Team, League, Clothes
 
 
 class BasicViewTest:
@@ -48,7 +48,8 @@ class OffersViewTest(TestCase, BasicViewTest):
 
     def setUp(self):
         create_league_and_team()
-        self.url = '/offers/Lech Poznań/czapka'
+        create_clothes()
+        self.url = '/offers/Lech Poznań/hat/1'
         self.expected_view_name = 'ballegro:offers'
         self.expected_template = 'ballegro/offers.html'
 
@@ -69,6 +70,11 @@ class AllTeamsViewTest(TestCase, BasicViewTest):
     def test_leagues_with_teams_in_context(self):
         response = self.client.get(self.url)
         self.assertIn('leagues_with_teams', response.context)
+
+
+def create_clothes():
+    hat = Clothes(name='czapka', category=None, add_team_to_phrase=True, url_name='hat')
+    hat.save()
 
 
 def create_league_and_team():
