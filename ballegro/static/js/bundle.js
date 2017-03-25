@@ -94,21 +94,26 @@ const utils = require('./utils');
 
 module.exports = function teamShow() {
     injectSVGs({}).then(() => {
+        const [teamName] = window.location.href.split('/').slice(-1);
         createFigure(document.querySelector('#player'), 'player', {
-            shorts() { console.log('shorts'); },
-            socks() { console.log('socks'); },
-            shirt() { console.log('shirt'); },
-            boots() { console.log('boots'); },
-            ball() { console.log('ball'); }
+            shorts: () => goTo(`offers/spodenki/${teamName}`),
+            socks: () => goTo(`offers/getry/${teamName}`),
+            shirt: () => goTo(`offers/koszulka/${teamName}`),
+            boots: () => goTo(`offers/buty/${teamName}`),
+            ball: () => goTo(`offers/piłka/${teamName}`)
         });
         createFigure(document.querySelector('#fan'), 'fan', {
-            scarf() { console.log('scarf'); },
-            hat() { console.log('hat'); },
-            tracksuit() { console.log('tracksuit'); },
-            shirt() { console.log('shirt'); },
-            boots() { console.log('boots'); }
+            scarf: () => goTo(`offers/szalik/${teamName}`),
+            hat: () => goTo(`offers/czapka/${teamName}`),
+            tracksuit: () => goTo(`offers/dres/${teamName}`),
+            shirt: () => goTo(`offers/koszulka/${teamName}`),
+            boots: () => goTo(`offers/buty/${teamName}`)
         });
     });
+}
+
+function goTo(url) {
+    window.location.href = `${window.location.protocol}//${window.location.host}/${url}`;
 }
 
 function injectSVGs(opts) {

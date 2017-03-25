@@ -3,6 +3,10 @@
 {% load staticfiles %}
 {% block content %}
     <div id="team-show" class="main">
+        <div class="banner">
+            <img class="banner__emblem" src="/{{team.image}}" />
+            <h3 class="banner__heading">{{team.name}}</h3>
+        </div>
         <div class="figures">
             <img class="svg-injection" src="{% static 'images/player.svg' %}" />
             <img class="svg-injection" src="{% static 'images/fan.svg' %}" />
