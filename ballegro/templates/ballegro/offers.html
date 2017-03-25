@@ -1,7 +1,9 @@
 {% extends 'ballegro/base.html' %}
 {% load staticfiles %}
 {% block breadcrumb %}
-<a href="{% url 'ballegro:team_show' team_name=team.name %}">{{ team.name }}</a>
+  >
+  <a href="{% url 'ballegro:all_teams' %}">>{{ team.league.name }}</a> >
+  <a href="{% url 'ballegro:team_show' team_name=team.name %}" >>{{ team.name }}</a>
 {% endblock breadcrumb %}
 {% block content %}
 <div class="container main" id="offers">

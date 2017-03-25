@@ -12,8 +12,10 @@
     <body>
         <header class="navbar navbar-fixed-top navbar-inverse">
             <a href="{% url 'ballegro:root' %}" id="logo">Ballegro</a>
-            {% block breadcrumb %}
-            {% endblock breadcrumb %}
+            <span id="breadcrumbs">
+              {% block breadcrumb %}
+              {% endblock breadcrumb %}
+            </span>
             <div class="navbar-right">
               <a href="{% url 'ballegro:all_teams' %}"> All teams </a>
               <div class="searchbar" id="searchbar">
@@ -22,6 +24,10 @@
               </div>
             </div>
         </header>
+        <div class="row">
+
+        </div>
+
 
         {% block content %}
         {% endblock content %}
