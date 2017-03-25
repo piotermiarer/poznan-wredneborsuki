@@ -33,4 +33,3 @@ polish_league = { "name": "Lotto Ekstraklasa", "teams": [
     "crest_url": "https://upload.wikimedia.org/wikipedia/en/c/c9/G%C3%B3rnik_%C5%81%C4%99czna_logo.png"}
 
 ] }
-# for club in [, , , ", ", ", , , , "", "", "", ", "Piast Gliwice", "", ""]:

@@ -1,3 +1,60 @@
+/* mixins, variables, etc. */
+$gray-medium-light: #eaeaea;
+$gray-light: #999999;
+$gray: #555555;
+$gray-darker: #222222;
+/* universal */
+
 body {
-    background-color: orange;    
+    background-color: orange;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color:white;
+    text-decoration: none;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray-darker;
+    }
+  }
+  small {
+    float: left;
+    }
+  ul {
+    float: left;
+    list-style: none;
+    li {
+        float: left;
+        margin-left: 15px;
+    }
+  }
 }
