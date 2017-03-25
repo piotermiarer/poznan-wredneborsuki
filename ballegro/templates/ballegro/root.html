@@ -1,28 +1,30 @@
 {% extends 'ballegro/base.html' %}
 {% block content %}
 
-  <h1> Skompletuj swój ubiór! </h1>
-  <div class="jumbotron center" id="upcoming">
-    <h2> Nadchodzące mecze </h2>
-    <ul>
-      {% for match in upcoming_matches.fixtures|slice:":5" %}
-        <li>
-          {{ match.homeTeamName }} : {{ match.awayTeamName }}
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <br/>
-  <div class="container">
-    <div class="cols" id="tiles">
-      {% for team in teams %}
-        <div class="col-xs-6 col-md-3" id="team-tile">
-          <a href="{% url 'ballegro:team_show' team_name=team %}" class="thumbnail">
-            <img src="{{ team.image }}" class="card-img-top" alt="{{ team.name }}"/>
-          </a>
-        </div>
-      {% endfor %}
+<div class="container main" id="root">
+    <h2 class="invite"> Skompletuj swój ubiór! </h2>
+    <div class="jumbotron center">
+      <h2> Nadchodzące mecze </h2>
+      <ul class="upcoming">
+        {% for match in upcoming_matches.fixtures|slice:":5" %}
+          <li class="upcoming__single">
+            <span class="upcoming__left">{{ match.homeTeamName }}</span> <span class="upcoming__separator">:</span> <span>{{ match.awayTeamName }}</span>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-  </div>
+    <br/>
+    <div class="container">
+      <div class="cols" id="tiles">
+        {% for team in teams %}
+          <div class="col-xs-6 col-md-3" id="team-tile">
+            <a href="{% url 'ballegro:team_show' team_name=team %}" class="thumbnail">
+              <img src="{{ team.image }}" class="card-img-top" alt="{{ team.name }}"/>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>
 
 {% endblock content %}
