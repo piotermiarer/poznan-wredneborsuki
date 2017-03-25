@@ -38,6 +38,7 @@ gulp.task('javascript', () => {
         .bundle()
         .on('error', function (err) {
             console.log(err.toString());
+            this.emit("end");
         })
         .pipe(source('bundle.js'))
         .pipe(buffer())
