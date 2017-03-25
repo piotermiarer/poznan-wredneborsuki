@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^offers/(?P<team_name>.+)/(?P<clothes>.+)',
         views.offers, name='offers'),
     url(r'^all_teams$', views.all_teams, name='all_teams'),
+    url(r'^search_team/(?P<team_name>\w+)$', views.search_team, name='search_team'),
 ]

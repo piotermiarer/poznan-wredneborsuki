@@ -49,7 +49,7 @@ class OffersViewTest(TestCase, BasicViewTest):
     def setUp(self):
         create_league_and_team()
         create_clothes()
-        self.url = '/offers/Lech Poznań/hat/1'
+        self.url = '/offers/Lech Poznań/hat'
         self.expected_view_name = 'ballegro:offers'
         self.expected_template = 'ballegro/offers.html'
 
