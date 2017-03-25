@@ -8,6 +8,6 @@ def get_upcoming():
         'X-Response-Control': 'minified'
     }
     # should get next 7 fixtures
-    connection.request('GET', '/v1/fixtures', None, headers)
+    connection.request('GET', '/v1/fixtures?timeFrame=n10&league=PL,BL1,SA,PD,FL1,DED,PPL', None, headers)
     upcoming_fixtures = json.loads(connection.getresponse().read().decode())
     return upcoming_fixtures
