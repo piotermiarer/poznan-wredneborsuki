@@ -10,7 +10,31 @@
         <link href="{% static 'css/main.css' %}" rel="stylesheet" media="screen">
     </head>
     <body>
+        <header class="navbar navbar-fixed-top navbar-inverse">
+          <div class="container">
+            <a href="{% url 'ballegro:root' %}" id="logo">Ballegro</a>
+            <nav>
+                <ul class="nav navbar-nav">
+                  <!-- <li><a href="{% url 'ballegro:root' %}">Ballegro</a></li> -->
+                </ul>
+            </nav>
+          </div>
+        </header>
         {% block content %}
         {% endblock content %}
+        <footer class="footer">
+
+          <nav>
+            <small>
+              Ballegro created by:
+            </small>
+            <ul>
+              <li><a href="https://github.com/kasztanka">@Madzia</a></li>
+              <li><a href="https://github.com/piotermiarer">@Piotr</a></li>
+              <li><a href="https://github.com/mrspejn">@Tomek</a></li>
+              <li><a href="https://github.com/k4ju/">@Kaju</a></li>
+            </ul>
+          </nav>
+        </footer>
     </body>
 </html>
