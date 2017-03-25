@@ -3,7 +3,7 @@
 
   <div class="jumbotron center main" id="all-teams">
     <h2> Ligi </h2>
-      {% for league, teams in league_with_teams.items %}
+      {% for league, teams in leagues_with_teams.items %}
         <div class="col-xs-6 col-md-3" id="team-tile">{{ league }}
           {% for team in teams %}
               <p>{{ team }}</p>
