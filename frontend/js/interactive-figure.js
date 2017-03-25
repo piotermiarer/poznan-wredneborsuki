@@ -25,7 +25,6 @@ module.exports = function createIntractiveFigure(svg, type, handlers) {
     const segmentsElements = utils.objectMap(segmentsNames, (key, segments) => {
         return segments.map(seg => svg.querySelector(`#${seg}`));
     });
-    console.log(segmentsElements);
     utils.objectForEach(segmentsElements, (key, segments) => {
         segments.forEach(seg => {
             seg.gearGroup = key;

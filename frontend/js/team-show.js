@@ -1,5 +1,5 @@
 const SVGInjector = require('svg-injector');
-const createFigure = require('./interative-figure');
+const createFigure = require('./interactive-figure');
 const utils = require('./utils');
 
 module.exports = function teamShow() {
