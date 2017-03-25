@@ -218,9 +218,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.64"
-     inkscape:cx="142.56228"
-     inkscape:cy="369.51976"
+     inkscape:zoom="1.28"
+     inkscape:cx="229.66555"
+     inkscape:cy="362.38512"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -253,19 +253,19 @@
      transform="translate(1.5431174,1.3419284)">
     <path
        style="opacity:1;fill:#ffccaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.72277,447.88148 -13.60376,12.77065 c -9.28418,8.71562 0.48713,18.76403 3.46676,33.06611 l 10.27134,49.30201 c 24.37989,-4.23003 33.88554,8.90641 37.14196,-2.89738 3.25643,-11.8038 -0.57766,-27.13417 -9.89459,-103.19955 -11.20471,-9.60303 -18.09753,2.24254 -27.38171,10.95816 z"
-       id="rect4239-5-1"
+       d="m 203.66741,530.13657 -5.55081,7.64219 c -8.5965,11.83539 -11.67216,0.59279 -11.67423,13.90727 l -0.0123,79.32206 c -0.002,13.31448 7.82368,22.50771 15.40187,31.1243 l 1.93029,2.19476 c 9.55072,10.85945 6.0124,-20.36082 8.93334,-33.36303 l 15.79503,-70.30958 -2.31879,-9.02184 c -1.56624,-6.09382 -5.09994,-12.88804 -5.37914,-14.03833 z"
+       id="rect4256-6-6"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssczcs"
+       sodipodi:nodetypes="csssssscssc"
        inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
        inkscape:export-xdpi="188"
        inkscape:export-ydpi="188" />
     <path
-       style="opacity:1;fill:#2c89a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 199.43633,372.61027 21.15552,11.35029 c 5.96767,3.20175 4.89048,6.9568 5.3784,13.67314 0.57503,7.91544 9.39074,6.00713 7.42995,30.6468 -1.96078,24.63968 7.02494,58.95607 2.4445,76.27878 -31.41008,-8.16268 -38.51927,-4.24939 -52.69674,3.64263 0,0 -24.04968,-57.46566 -20.85284,-69.5399 9.71067,-36.67655 -12.52467,-31.59015 -5.27993,-52.06852 5.38312,-15.21605 29.42035,-20.95835 42.42114,-13.98322 z"
-       id="rect4222-3-2"
+       style="opacity:1;fill:#ffccaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 190.72277,447.88148 -13.60376,12.77065 c -9.28418,8.71562 0.48713,18.76403 3.46676,33.06611 l 10.27134,49.30201 c 24.37989,-4.23003 33.88554,8.90641 37.14196,-2.89738 3.25643,-11.8038 -0.57766,-27.13417 -9.89459,-103.19955 -11.20471,-9.60303 -18.09753,2.24254 -27.38171,10.95816 z"
+       id="rect4239-5-1"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ssszccscs"
+       sodipodi:nodetypes="sssczcs"
        inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
        inkscape:export-xdpi="188"
        inkscape:export-ydpi="188" />
@@ -342,18 +342,9 @@
        inkscape:export-xdpi="188"
        inkscape:export-ydpi="188" />
     <path
-       style="opacity:1;fill:#2c89a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 121.22241,364.14071 -11.57045,2.11461 c -16.86005,3.08131 -8.98408,45.42225 -9.43399,58.97135 l -2.44584,73.65949 c 0,0 4.60022,21.33896 32.15407,9.31576 27.55393,-12.0232 30.9272,-1.54349 34.98174,1.326 4.05456,2.86949 2.54641,-77.23669 2.54641,-77.23669 l 3.46837,-28.35805 2.05883,-23.2222 c 1.18908,-13.41197 -34.89921,-19.65155 -51.75914,-16.57027 z"
-       id="rect4222-0"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssczzccss"
-       inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
-       inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
-    <path
        style="opacity:1;fill:#e5ff80;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 115.7735,638.46396 c -3.67012,1.8249 -6.60349,5.31774 -8.96578,6.98274 -8.30458,5.85341 -8.95366,16.42588 -3.62244,22.55867 5.33121,6.1328 12.31491,7.20578 17.36749,12.09753 7.39702,7.16144 10.40209,14.18727 18.37908,24.69963 7.97694,10.51244 20.33966,9.08677 28.02256,4.06613 7.6829,-5.02064 -18.4658,-30.42413 -24.75499,-56.75608 l -7.67354,-6.58739 c -4.70236,-4.03664 -13.94103,-11.00129 -18.75238,-7.06123 z"
-       id="rect4619-0"
+       id="boot1-down-fan"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cszazzcsc"
        inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
@@ -374,24 +365,6 @@
        id="rect4170-7-0-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssssss"
-       inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
-       inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
-    <path
-       style="fill:#37abc8;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 198.44182,193.26134 c 0,0 -1.99264,10.5104 21.41263,7.79554 23.40529,-2.71486 25.21775,-44.67447 25.21775,-44.67447 0,0 40.90318,41.86254 35.17652,46.64651 -5.72667,4.78398 -24.01998,24.35879 -24.01998,24.35879 -9.94938,14.90235 -7.2929,41.71552 -14.70948,53.55586 -5.28633,28.50313 -16.2222,86.50999 -18.22769,100.51541 -2.00551,14.00541 -29.68777,-4.13078 -60.99399,-5.59514 -31.30622,-1.46436 -17.88291,5.81967 -31.30622,-1.46436 -13.42332,-7.28403 -30.33826,-4.99476 -30.33826,-4.99476 0,0 7.36487,-7.67775 10.85621,-36.857 2.61464,-21.85157 -3.93625,-41.58742 -3.90469,-52.88428 0.0372,-13.25829 -23.07988,-98.72689 -35.49974,-97.02337 -17.19763,-23.48639 40.11361,-14.25312 33.28243,-42.96282 0,0 22.24519,58.64218 37.63931,53.76581 14.51629,-4.59825 14.57051,13.64504 14.57051,13.64504 0,0 0.44162,0.88679 9.52981,4.35976 9.08818,3.47298 15.62206,4.35142 22.28975,-1.52669 6.66768,-5.87813 9.02518,-16.65984 9.02518,-16.65984 z"
-       id="path3355-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="czczcczzzcssccsczzcc"
-       inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
-       inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
-    <path
-       style="fill:#fff6d5;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 156.15937,192.30494 c 0.71658,2.439 10.69427,19.4596 21.92243,16.90636 5.35042,-1.21667 13.30155,-5.10558 16.34318,-20.44477 l 7.28249,-0.2223 c 0,0 -4.10924,17.96585 -12.27602,23.48477 -8.16679,5.51891 -17.31227,5.6594 -24.94455,1.14446 -7.63228,-4.51495 -15.44595,-17.38282 -15.44595,-17.38282 z"
-       id="path3359-25"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cscczzcc"
        inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
        inkscape:export-xdpi="188"
        inkscape:export-ydpi="188" />
@@ -483,82 +456,122 @@
     <path
        style="opacity:1;fill:#e5ff80;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 185.82047,632.06272 c -3.67012,1.8249 -6.60348,5.31774 -8.96577,6.98274 -8.30458,5.85341 -8.95366,16.42587 -3.62245,22.55867 5.33122,6.1328 12.31492,7.20578 17.3675,12.09753 7.39702,7.16144 10.40209,14.18726 18.37908,24.69963 7.97693,10.51244 20.33965,9.08676 28.02256,4.06613 7.68289,-5.02065 -18.4658,-30.42414 -24.75499,-56.75608 l -7.67355,-6.58739 c -4.70235,-4.03664 -13.94103,-11.00129 -18.75238,-7.06123 z"
-       id="rect4619-0-6"
+       id="boot2-down-fan"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cszazzcsc"
        inkscape:transform-center-x="62.42563"
        inkscape:transform-center-y="12.234076"
        inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
        inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
-    <path
-       style="opacity:1;fill:#ffccaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 204.21984,529.03172 -5.55081,7.64219 c -8.5965,11.83539 -11.67216,0.59279 -11.67423,13.90727 l -0.0123,79.32206 c -0.002,13.31448 7.82368,22.50771 15.40187,31.1243 l 1.93029,2.19476 c 9.55072,10.85945 6.0124,-20.36082 8.93334,-33.36303 l 15.79503,-70.30958 -2.31879,-9.02184 c -1.56624,-6.09382 -5.09994,-12.88804 -5.37914,-14.03833 z"
-       id="rect4256-6-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csssssscssc"
-       inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
-       inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
-    <path
-       style="opacity:1;fill:#2c89a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 331.4649,19.82642 324.5478,8.7092899 c -10.0795,-16.19952 -103.65128,-4.91256 -134.15135,-4.20071 L 24.5832,8.3786499 c 0,0 -47.03994,6.3043701 -14.8815497,32.1850701 32.1584097,25.88076 9.2657297,30.0646 3.5846597,34.26704 -5.6810997,4.20245 173.86241,-4.0758 173.86241,-4.0758 l 64.31004,0.97706 52.51654,0.0372 c 30.3309,0.0215 37.569,-35.7434 27.4896,-51.9428 z"
-       id="rect4222-0-9"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssczzccss"
-       inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
-       inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
-    <path
-       style="opacity:1;fill:#37abc8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1445.0908,82.687132 -7.1232,-11.683326 C 1427.5878,53.979271 1331.2279,65.841059 1299.819,66.589173 l -170.7539,4.067166 c 0,0 -48.4416,6.625439 -15.325,33.824211 33.1166,27.19884 9.5418,31.59577 3.6915,36.01222 -5.8504,4.41648 179.0429,-4.28337 179.0429,-4.28337 l 66.2263,1.02682 54.0814,0.0391 c 31.2346,0.0226 38.6884,-37.563771 28.3086,-54.58818 z"
-       id="rect4222-0-9-3"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssczzccss"
-       clip-path="url(#clipPath6317)"
-       transform="matrix(0.97106538,0,0,0.95153921,-1070.0738,-60.2174)"
-       inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
-       inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
-    <path
-       style="opacity:1;fill:#2c89a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 208.88469,137.75182 -34.62445,7.7441 -41.35349,-6.24899 c 0,-20.57162 19.0667,-35.69893 40.89433,-35.69893 21.82762,0 35.08361,13.63221 35.08361,34.20382 z"
-       id="path5255-3"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccsc"
-       inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
-       inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
-    <path
-       style="fill:#37abc8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 133.35365,139.13488 31.55962,18.01128 c 0,0 17.42962,-6.01739 26.5309,-6.45688 7.99304,-0.38597 23.75641,3.39836 23.75641,3.39836 l -6.76277,-16.99176 z"
-       id="path6347"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccaccc"
-       inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
-       inkscape:export-xdpi="188"
-       inkscape:export-ydpi="188" />
+       inkscape:export-ydpi="188"
+       inkscape:label="#boot2-down-fan" />
+    <g
+       id="tracksuit-down">
+      <path
+         inkscape:export-ydpi="188"
+         inkscape:export-xdpi="188"
+         inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
+         sodipodi:nodetypes="sssczssccss"
+         inkscape:connector-curvature="0"
+         id="rect4222-0"
+         d="m 121.22241,364.14071 -11.57045,2.11461 c -16.86005,3.08131 -8.98408,45.42225 -9.43399,58.97135 l -2.44584,73.65949 c 0,0 -7.027283,83.32985 5.63757,138.30751 12.66485,54.97766 32.30825,9.50506 36.3628,12.37454 2.07028,1.46517 8.548,-59.42886 13.31108,-115.32701 4.56524,-53.57635 14.37077,-101.94997 14.37077,-101.94997 l 3.46837,-28.35805 2.05883,-23.2222 c 1.18908,-13.41197 -34.89921,-19.65155 -51.75914,-16.57027 z"
+         style="opacity:1;fill:#2c89a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="188"
+         inkscape:export-xdpi="188"
+         inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
+         sodipodi:nodetypes="sssssccsscs"
+         inkscape:connector-curvature="0"
+         id="rect4222-3-2"
+         d="m 199.43633,373.0009 21.15552,11.35029 c 5.96767,3.20175 4.89048,6.9568 5.3784,13.67314 0.57503,7.91544 7.73345,14.84596 5.77267,39.48563 -0.99957,12.56081 4.84908,71.88032 2.17406,119.16681 -2.57238,45.47216 -17.9412,82.16285 -20.18662,90.65479 -31.41008,-8.16268 -24.11114,-7.70949 -38.28861,0.18253 0,0 13.16818,-42.42825 9.75655,-88.28459 -4.0318,-54.19214 -24.63478,-113.63674 -22.90318,-120.17686 9.71068,-36.67655 -12.52467,-31.59015 -5.27993,-52.06852 5.38312,-15.21605 29.42035,-20.95835 42.42114,-13.98322 z"
+         style="opacity:1;fill:#2c89a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="scarf">
+      <path
+         inkscape:export-ydpi="188"
+         inkscape:export-xdpi="188"
+         inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
+         sodipodi:nodetypes="sssczsssccss"
+         inkscape:connector-curvature="0"
+         id="rect4222-0-9"
+         d="M 331.4649,19.82642 324.5478,8.7092899 c -10.0795,-16.19952 -103.65128,-4.91256 -134.15135,-4.20071 L 24.5832,8.3786499 c 0,0 -47.03994,6.3043701 -14.8815497,32.1850701 32.1584097,25.88076 15.7110477,26.744295 10.0299727,30.946727 -2.096196,1.550608 21.334884,0.496913 50.4035,0.07785 2.121518,-0.03059 4.273064,-0.05779 6.446907,-0.08035 48.76528,-0.506187 110.56669,-0.752984 110.56669,-0.752984 l 64.31004,0.97706 52.51654,0.0372 c 30.3309,0.0215 37.569,-35.7434 27.4896,-51.9428 z"
+         style="opacity:1;fill:#2c89a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="188"
+         inkscape:export-xdpi="188"
+         inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
+         transform="matrix(0.9711453,0,0,0.95153921,-1072.924,-60.2174)"
+         clip-path="url(#clipPath6317)"
+         sodipodi:nodetypes="sssczzccss"
+         inkscape:connector-curvature="0"
+         id="rect4222-0-9-3"
+         d="m 1445.0908,82.687132 -7.1232,-11.683326 C 1427.5878,53.979271 1331.2279,65.841059 1299.819,66.589173 l -170.7539,4.067166 c 0,0 -48.4416,6.625439 -15.325,33.824211 33.1166,27.19884 9.5418,31.59577 3.6915,36.01222 -5.8504,4.41648 179.0429,-4.28337 179.0429,-4.28337 l 66.2263,1.02682 54.0814,0.0391 c 31.2346,0.0226 38.6884,-37.563771 28.3086,-54.58818 z"
+         style="opacity:1;fill:#37abc8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="hat">
+      <path
+         inkscape:export-ydpi="188"
+         inkscape:export-xdpi="188"
+         inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
+         sodipodi:nodetypes="cccsc"
+         inkscape:connector-curvature="0"
+         id="path5255-3"
+         d="m 208.88469,137.75182 -34.62445,7.7441 -41.35349,-6.24899 c 0,-20.57162 19.0667,-35.69893 40.89433,-35.69893 21.82762,0 35.08361,13.63221 35.08361,34.20382 z"
+         style="opacity:1;fill:#2c89a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="188"
+         inkscape:export-xdpi="188"
+         inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
+         sodipodi:nodetypes="ccaccc"
+         inkscape:connector-curvature="0"
+         id="path6347"
+         d="m 133.35365,139.13488 31.55962,18.01128 c 0,0 17.42962,-6.01739 26.5309,-6.45688 7.99304,-0.38597 23.75641,3.39836 23.75641,3.39836 l -6.76277,-16.99176 z"
+         style="fill:#37abc8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
     <rect
        style="opacity:1;fill:#ccff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4742-5"
+       id="boot1-top-fan"
        width="20.131853"
        height="42.668148"
-       x="50.310528"
-       y="657.87042"
+       x="50.230602"
+       y="654.71246"
        transform="matrix(-0.98547529,0.16981886,0.28733964,0.95782876,0,0)"
        inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
        inkscape:export-xdpi="188"
        inkscape:export-ydpi="188" />
     <rect
        style="opacity:1;fill:#ccff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4742-5-4"
+       id="boot2-top-fan"
        width="20.131853"
        height="42.668148"
-       x="-20.380575"
-       y="661.8587"
+       x="-20.647083"
+       y="661.90594"
        transform="matrix(-0.98547529,0.16981886,0.28733964,0.95782876,0,0)"
        inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
        inkscape:export-xdpi="188"
        inkscape:export-ydpi="188" />
+    <g
+       id="shirt-fan">
+      <path
+         inkscape:export-ydpi="188"
+         inkscape:export-xdpi="188"
+         inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
+         sodipodi:nodetypes="cscczzcc"
+         inkscape:connector-curvature="0"
+         id="path3359-25"
+         d="m 159.7669,200.04957 c 1.26901,2.50806 7.86799,15.62122 19.09615,13.06798 5.35042,-1.21667 19.60037,-6.22862 22.30021,-13.65766 l 1.42309,5.73473 c 0,0 -4.20689,5.22171 -12.37367,10.74063 -8.16679,5.51891 -17.31227,5.6594 -24.94455,1.14446 -7.63228,-4.51495 -9.47098,-9.16378 -9.47098,-9.16378 z"
+         style="fill:#fff6d5;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#37abc8;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 203.6176,204.39415 c 0,0 -6.48483,3.28384 16.92044,0.56898 23.40529,-2.71486 25.21775,-44.67447 25.21775,-44.67447 0,0 40.90318,41.86254 35.17652,46.64651 -5.72667,4.78398 -24.01998,24.35879 -24.01998,24.35879 -9.94938,14.90235 -7.2929,41.71552 -14.70948,53.55586 -5.28633,28.50313 -24.50859,85.12893 -17.95148,98.85813 6.55711,13.72919 -25.85667,-3.91058 -57.16289,-5.37494 -12.53727,-0.58644 -18.39577,-0.62348 -21.17667,-0.73988 -4.16314,-0.17426 -1.42886,0.8547 -3.87955,-1.78482 -0.81225,-0.87484 -40.69557,-2.49734 -40.69557,-2.49734 0,0 7.36487,-7.67775 10.85621,-36.857 2.61464,-21.85157 -3.93625,-41.58742 -3.90469,-52.88428 0.0372,-13.25829 -30.306439,-108.2972 -42.726299,-106.59368 24.208621,-4.54108 31.319781,-2.19689 35.813359,-26.21096 0,0 27.72445,39.70737 42.33494,46.58426 9.88971,4.65491 14.57051,13.64504 14.57051,13.64504 0,0 0.44162,0.88679 9.52981,4.35976 9.08818,3.47298 14.81641,3.61902 22.28975,-1.52669 7.47334,-5.14571 11.88163,-8.70086 11.88163,-8.70086 z"
+         id="path4196"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czczcczssscssccsczzcc"
+         inkscape:export-filename="/home/tomkejosiak/Desktop/snap.png"
+         inkscape:export-xdpi="188"
+         inkscape:export-ydpi="188" />
+    </g>
   </g>
 </svg>

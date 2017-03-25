@@ -5,9 +5,15 @@ const segmentNamesForType = {
         'shorts': [ 'shorts-p1', 'shorts-p2', 'shorts-inside-p1', 'shorts-inside-p2' ],
         'socks': [ 'socks' ],
         'shirt': [ 'shirt-top', 'shirt-back' ],
-        'boots': [ 'boot1-top', 'boot2-top', 'boot1-down', 'boot2-down']
+        'boots': [ 'boot1-top', 'boot2-top', 'boot1-down', 'boot2-down'],
+        'ball': [ 'ball' ]
     },
     fan: {
+        'scarf': [ 'scarf' ],
+        'hat': [ 'hat' ],
+        'tracksuit': [ 'tracksuit-down' ],
+        'shirt': [ 'shirt-fan' ],
+        'boots': [ 'boot1-top-fan', 'boot2-top-fan', 'boot1-down-fan', 'boot2-down-fan']
     }
 };
 

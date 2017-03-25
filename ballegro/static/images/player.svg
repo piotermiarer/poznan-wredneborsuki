@@ -18,66 +18,66 @@
    sodipodi:docname="player.svg">
   <defs
      id="defs4">
-    <mask
-       maskUnits="userSpaceOnUse"
-       id="mask4535">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4184">
       <ellipse
-         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="ellipse4537"
-         cx="912.93445"
-         cy="-359.28033"
-         rx="74.508972"
-         ry="122.69389"
-         transform="matrix(-0.23012886,0.97316017,-0.91626241,0.40057859,0,0)" />
-    </mask>
-    <mask
-       maskUnits="userSpaceOnUse"
-       id="mask4554">
-      <ellipse
-         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="ellipse4556"
-         cx="-60.546886"
-         cy="670.52039"
-         rx="113.77563"
-         ry="54.573833"
-         transform="matrix(0.83894587,-0.54421486,0.50892826,0.86080894,0,0)" />
-    </mask>
-    <mask
-       maskUnits="userSpaceOnUse"
-       id="mask4573">
-      <ellipse
-         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="ellipse4575"
-         cx="-688.83124"
-         cy="-525.29663"
-         rx="61.188213"
-         ry="96.753677"
-         transform="matrix(-0.81171222,-0.58405759,0.79884112,-0.60154207,0,0)" />
-    </mask>
-    <mask
-       maskUnits="userSpaceOnUse"
-       id="mask4592">
-      <ellipse
-         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="ellipse4594"
-         cx="-981.75647"
-         cy="795.40936"
-         rx="100.31911"
-         ry="89.901871"
-         transform="matrix(0.68692436,-0.72672892,0.99970572,0.02425838,0,0)" />
-    </mask>
-    <mask
-       maskUnits="userSpaceOnUse"
-       id="mask4611">
-      <ellipse
-         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="ellipse4613"
-         cx="672.24945"
-         cy="1054.0841"
-         rx="91.502953"
          ry="85.247765"
+         rx="91.502953"
+         cy="1054.084"
+         cx="672.24945"
+         id="ellipse4186"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          transform="matrix(0.96113669,-0.27607294,-0.48653768,0.87365959,0,0)" />
-    </mask>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4189">
+      <ellipse
+         ry="122.69389"
+         rx="74.508972"
+         cy="-359.2804"
+         cx="912.93445"
+         id="ellipse4191"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(-0.23012886,0.97316017,-0.91626241,0.40057859,0,0)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4194">
+      <ellipse
+         ry="54.573833"
+         rx="113.77563"
+         cy="670.52032"
+         cx="-60.546875"
+         id="ellipse4196"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.83894587,-0.54421486,0.50892826,0.86080894,0,0)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4199">
+      <ellipse
+         ry="96.753677"
+         rx="61.188213"
+         cy="-525.29663"
+         cx="-688.83124"
+         id="ellipse4201"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(-0.81171222,-0.58405759,0.79884112,-0.60154207,0,0)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4204">
+      <ellipse
+         ry="89.901871"
+         rx="100.31911"
+         cy="795.40936"
+         cx="-981.75647"
+         id="ellipse4206"
+         style="opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.68692436,-0.72672892,0.99970572,0.02425838,0,0)" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -86,11 +86,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="719.48467"
-     inkscape:cy="60.379241"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="91.695187"
+     inkscape:cy="78.148877"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="ball"
      showgrid="false"
      showguides="true"
      inkscape:window-width="1855"
@@ -110,7 +110,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -313,7 +313,7 @@
          style="opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          sodipodi:type="star" />
       <path
-         mask="url(#mask4554)"
+         mask="none"
          transform="matrix(0.296061,0.40030211,-0.17503746,0.61709414,235.80617,186.90135)"
          inkscape:transform-center-y="0.050038293"
          inkscape:transform-center-x="0.60502032"
@@ -330,9 +330,10 @@
          sodipodi:sides="5"
          id="path4425-0"
          style="opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         sodipodi:type="star" />
+         sodipodi:type="star"
+         clip-path="url(#clipPath4194)" />
       <path
-         mask="url(#mask4573)"
+         mask="none"
          transform="matrix(-0.4025439,0.25356039,-0.53457378,-0.35239345,654.96507,897.61553)"
          inkscape:transform-center-y="0.13947956"
          inkscape:transform-center-x="-0.27162788"
@@ -349,9 +350,10 @@
          sodipodi:sides="5"
          id="path4425-0-6"
          style="opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         sodipodi:type="star" />
+         sodipodi:type="star"
+         clip-path="url(#clipPath4199)" />
       <path
-         mask="url(#mask4592)"
+         mask="none"
          transform="matrix(0.01272138,0.43625262,-0.52425742,0.41235809,597.26442,325.00834)"
          inkscape:transform-center-y="-0.91965608"
          inkscape:transform-center-x="0.06596116"
@@ -368,10 +370,11 @@
          sodipodi:sides="5"
          id="path4425-0-6-2"
          style="opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         sodipodi:type="star" />
+         sodipodi:type="star"
+         clip-path="url(#clipPath4204)" />
       <path
-         mask="url(#mask4611)"
-         transform="matrix(0.52921168,0.18413712,0.29471596,0.64106588,-72.061287,183.93282)"
+         mask="none"
+         transform="matrix(0.52921168,0.18413712,0.29471596,0.64106588,-71.704144,184.64711)"
          inkscape:transform-center-y="1.3606279"
          inkscape:transform-center-x="0.61800957"
          d="m 198.49499,663.45352 24.83559,-6.90913 14.24559,21.485 -16.03133,20.1876 -24.15349,-9.00839 z"
@@ -387,9 +390,10 @@
          sodipodi:sides="5"
          id="path4425-0-6-2-6"
          style="opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         sodipodi:type="star" />
+         sodipodi:type="star"
+         clip-path="url(#clipPath4184)" />
       <path
-         mask="url(#mask4535)"
+         mask="none"
          transform="matrix(0.26291659,-0.39790413,0.60138159,-0.09409471,-263.15663,797.30817)"
          inkscape:transform-center-y="-0.34483764"
          inkscape:transform-center-x="-0.76710944"
@@ -406,7 +410,8 @@
          sodipodi:sides="5"
          id="path4425-0-6-2-1"
          style="opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         sodipodi:type="star" />
+         sodipodi:type="star"
+         clip-path="url(#clipPath4189)" />
     </g>
     <rect
        style="opacity:1;fill:#ccff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"

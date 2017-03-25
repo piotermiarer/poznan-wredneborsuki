@@ -8,9 +8,16 @@ module.exports = function teamShow() {
             shorts() { console.log('shorts'); },
             socks() { console.log('socks'); },
             shirt() { console.log('shirt'); },
+            boots() { console.log('boots'); },
+            ball() { console.log('ball'); }
+        });
+        createFigure(document.querySelector('#fan'), 'fan', {
+            scarf() { console.log('scarf'); },
+            hat() { console.log('hat'); },
+            tracksuit() { console.log('tracksuit'); },
+            shirt() { console.log('shirt'); },
             boots() { console.log('boots'); }
         });
-
     });
 }
 

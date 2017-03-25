@@ -6,9 +6,15 @@ const segmentNamesForType = {
         'shorts': [ 'shorts-p1', 'shorts-p2', 'shorts-inside-p1', 'shorts-inside-p2' ],
         'socks': [ 'socks' ],
         'shirt': [ 'shirt-top', 'shirt-back' ],
-        'boots': [ 'boot1-top', 'boot2-top', 'boot1-down', 'boot2-down']
+        'boots': [ 'boot1-top', 'boot2-top', 'boot1-down', 'boot2-down'],
+        'ball': [ 'ball' ]
     },
     fan: {
+        'scarf': [ 'scarf' ],
+        'hat': [ 'hat' ],
+        'tracksuit': [ 'tracksuit-down' ],
+        'shirt': [ 'shirt-fan' ],
+        'boots': [ 'boot1-top-fan', 'boot2-top-fan', 'boot1-down-fan', 'boot2-down-fan']
     }
 };
 
@@ -92,9 +98,16 @@ module.exports = function teamShow() {
             shorts() { console.log('shorts'); },
             socks() { console.log('socks'); },
             shirt() { console.log('shirt'); },
+            boots() { console.log('boots'); },
+            ball() { console.log('ball'); }
+        });
+        createFigure(document.querySelector('#fan'), 'fan', {
+            scarf() { console.log('scarf'); },
+            hat() { console.log('hat'); },
+            tracksuit() { console.log('tracksuit'); },
+            shirt() { console.log('shirt'); },
             boots() { console.log('boots'); }
         });
-
     });
 }
 
