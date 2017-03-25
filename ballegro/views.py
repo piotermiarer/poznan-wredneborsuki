@@ -6,8 +6,13 @@ from .api_allegro import get_offers
 from .matches import get_upcoming
 
 def root(request):
-    teams = Team.objects.all()
-    upcoming = get_upcoming()
+    all_teams = Team.objects.all()
+    upcoming, upcoming_teams = get_upcoming()
+    teams = []
+    for team in all_teams:
+        if team.name in upcoming_teams[:10]:
+            teams.append(team)
+
     return render(request, 'ballegro/root.html',
         {'teams': teams, 'upcoming_matches': upcoming})
 
