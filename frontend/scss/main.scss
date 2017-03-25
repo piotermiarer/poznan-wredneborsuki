@@ -279,6 +279,7 @@ svg {
   ul {
     float: left;
     padding-top: 20px;
+    padding-left: 5px;
     li {
         float: left;
         margin-left: 15px;
@@ -287,4 +288,10 @@ svg {
         padding-bottom: 10px;
     }
   }
+}
+
+.row.jumbotron {
+  padding-left: 0px;
+  padding-top: 0px;
+  display: flex;
 }
