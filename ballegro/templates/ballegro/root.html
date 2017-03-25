@@ -4,10 +4,9 @@
   <div class="row center" id="upcoming">
     <h2> Nadchodzące mecze </h2>
     <ul>
-      {% for match in upcoming_matches %}
+      {% for match in upcoming_matches.fixtures %}
         <li>
-          <!-- {{ match.homeTeamName }} : {{ match.awayTeamName }} -->
-          {{ match }}
+          {{ match.homeTeamName }} : {{ match.awayTeamName }}
         </li>
       {% endfor %}
     </ul>
